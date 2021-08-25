@@ -119,6 +119,7 @@
 .company {
   height: 40px;
   margin-left: 6px;
+  cursor: pointer;
 }
 #discoverSlaoryaddsalory {
   display: grid;
