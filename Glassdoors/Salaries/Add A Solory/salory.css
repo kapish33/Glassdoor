@@ -1,0 +1,40 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: #eaeaea;
+  box-sizing: border-box;
+}
+.mainhead {
+  display: grid;
+  background-color: white;
+  height: 40px;
+}
+.mainhead img {
+  height: 35px;
+  margin: 0.21%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin: auto;
+  justify-content: center;
+  width: 60%;
+  grid-gap: 2%;
+}
+.cards div {
+  background-color: #ffffff;
+  padding: 2%;
+}
+.cardright * {
+  background-color: white;
+}
+
+/* // trying radio buton */
+.cardleft * {
+  background-color: #ffffff;
+}
+.main {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}

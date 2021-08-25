@@ -1,0 +1,238 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+#topHeadder {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 50px;
+}
+
+#topHeadder :nth-child(1) {
+  grid-column-start: 2;
+  height: 45%;
+}
+#topHeadder :nth-child(2) {
+  grid-column-start: 9;
+  height: 25%;
+}
+#topHeadder :nth-child(3) {
+  grid-column-start: 10;
+}
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(23, 199, 47, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.user {
+  background-color: white;
+  opacity: 100%;
+}
+.user:hover {
+  background-color: #ddd;
+}
+.upper {
+  background-color: #00a1df;
+  text-align: center;
+  color: white;
+  padding: 1%;
+  font-size: 20px;
+}
+#headder2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 50px;
+  margin: 0.3%;
+}
+
+#headder2 :nth-child(1) {
+  grid-column-start: 2;
+  height: 30%;
+}
+.company:hover {
+  border-radius: 4px;
+  background-color: #dee0e3;
+}
+#headder2 :nth-child(2) {
+  grid-column-start: 3;
+  height: 30%;
+}
+#headder2 :nth-child(3) {
+  grid-column-start: 4;
+  height: 30%;
+}
+#headder2 :nth-child(4) {
+  grid-column-start: 5;
+  height: 30%;
+}
+
+#headder2 :nth-child(5) {
+  grid-column-start: 10;
+  height: 30%;
+}
+#headder2 :nth-child(6) {
+  grid-column-start: 11;
+  height: 30%;
+}
+#discoverSlaoryaddsalory {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #f5f6f7;
+  height: 12%;
+}
+#discoverSlaoryaddsalory :nth-child(1) {
+  grid-column-start: 2;
+  font-weight: bold;
+  font-size: 17px;
+  height: 50px;
+}
+#discoverSlaoryaddsalory :nth-child(2) {
+  margin-top: 15%;
+  margin-left: 6%;
+  grid-column-start: 3;
+  font-size: 19px;
+}
+/* adding images and text over that */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 50%;
+  background-color: #0000009d;
+  border-radius: 2px;
+}
+.centered > h1 {
+  margin: 3% 0 3%;
+}
+#svg {
+  height: 12%;
+  background-color: #04aa6d;
+}
+
+button {
+  background-color: #0caa41;
+  border: 0px;
+  height: 65px;
+  padding: 15px;
+  border-radius: 0px 2px 2px 0px;
+}
+button:hover {
+  background-color: #038347;
+}
+.lowebox {
+  display: grid;
+  grid-template-columns: 3fr 2fr 0.5fr;
+  gap: 0%;
+  margin: 0% 2%;
+}
+.lowebox * {
+  font-size: 26px;
+  border: 0px;
+  justify-content: center;
+}
+.removeHyperunderline {
+  text-decoration: none;
+}
+.Search_Salaries {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 500px;
+}
+.Search_Salaries > div {
+  padding: 2%;
+  width: 50%;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.Search_Salaries > div > img {
+  height: 100%;
+}
+.Search_Salaries > div > p {
+  font-size: 19px;
+  line-height: 1.7;
+  margin-left: 14%;
+  margin-right: 10%;
+}
+.Search_Salaries > div > h3 {
+  margin-top: 17%;
+  margin-left: 14%;
+  margin-right: 10%;
+}
+.greenbut {
+  margin: 5%;
+  background-color: #0caa41;
+  color: white;
+  text-align: center;
+  margin-left: 14%;
+  margin-right: 10%;
+}
+.greenbut:hover {
+  background-color: #007549;
+}
+/* glassdoor */
+.glassdoor {
+  margin: 0px 5%;
+}
+.containerdown {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 2%;
+}
+.glasscards {
+  margin-top: 3%;
+  box-shadow: 0 0 10px rgba(8, 5, 5, 0.226);
+}
+.glasscards img {
+  width: 100%;
+}
+.glasscards > p,
+h3 {
+  margin: 6% 4%;
+}
+.sizeg {
+  padding: 2%;
+}
