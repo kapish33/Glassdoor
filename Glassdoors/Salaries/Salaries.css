@@ -74,19 +74,26 @@
   font-size: 20px;
 }
 #headder2 {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(12, 1fr); */
   height: 50px;
   margin: 0.3%;
 }
 
-#headder2 :nth-child(1) {
-  grid-column-start: 2;
-  height: 30%;
+#rght {
+  display: flex;
+  justify-content: end;
 }
+
 .company:hover {
   border-radius: 4px;
   background-color: #dee0e3;
+}
+/* #headder2 :nth-child(1) {
+  grid-column-start: 2;
+  height: 30%;
 }
 #headder2 :nth-child(2) {
   grid-column-start: 3;
@@ -108,6 +115,10 @@
 #headder2 :nth-child(6) {
   grid-column-start: 11;
   height: 30%;
+} */
+.company {
+  height: 40px;
+  margin-left: 6px;
 }
 #discoverSlaoryaddsalory {
   display: grid;
