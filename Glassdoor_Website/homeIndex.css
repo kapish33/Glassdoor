@@ -274,7 +274,12 @@ a {
     font-weight: bold;
     color: white;
     background-color: #1861BF;
+    cursor: pointer;
     font-size: 15px;
+}
+#sub:hover {
+    color: white;
+    background-color: #1861BF;
     cursor: pointer;
 }
 #finish:hover {

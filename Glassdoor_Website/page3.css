@@ -36,3 +36,12 @@ body {
 div {
     overflow: hidden;
 }
+#topSearch {
+    display: flex;
+
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+}
+#topSearch > div {
+    height: 80%;
+}
