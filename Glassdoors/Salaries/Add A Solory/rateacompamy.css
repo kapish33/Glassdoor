@@ -1,0 +1,82 @@
+* {
+  background-color: #eaeaea;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.mainhead {
+  background-color: white;
+}
+.mainhead img {
+  height: 25px;
+  margin: 0.4% 0.4%;
+}
+.bigger {
+  display: grid;
+  grid-template-columns: 2.7fr 1fr;
+  width: 80%;
+  margin: auto;
+  gap: 2%;
+}
+.left * {
+  background-color: white;
+  line-height: 1.7;
+}
+.left {
+  background-color: rgb(255, 255, 255);
+  padding: 2% 5%;
+}
+.right {
+  background-color: white;
+  padding: 3% 4%;
+}
+.right * {
+  background-color: white;
+  line-height: 1.7;
+}
+.right li {
+  margin-left: 13%;
+}
+button {
+  padding: 1% 3%;
+  margin: 0%;
+}
+#current {
+  background-color: #0c4085;
+  color: white;
+}
+.wrap {
+  /* display: none; */
+}
+.wrap div {
+  background-color: #f5f6f7;
+  padding: 0px 2%;
+  margin: 0px 0%;
+}
+@media only screen and (max-width: 990px) {
+  .bigger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+/* // on hover */
+#cars {
+  margin: 1% 5%;
+  padding: 1% 56% 1% 6%;
+}
+#cars * {
+  background-color: #f5f6f7;
+}
+.comonclass {
+  padding: 1% 50% 1% 2%;
+  border: 1 px solid grey;
+}
+#see {
+  background-color: #0c4085;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 2px;
+  border: 0px;
+}
