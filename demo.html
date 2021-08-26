@@ -239,7 +239,7 @@
 <div> <hr style="width: 30%;"></div>
 <div> <input id="mail" type="email" placeholder="Create account with Email"></div>
 <div><input id="password" type="password" placeholder="Password"></div>
-<div style="width: 30%; margin: auto; ;"><input onclick="signup()" style="background-color:#0275d8; color: white; " type="submit" placeholder="submit"></div>
+<div style="width: 30%; margin: auto;"><input onclick="signup()" style="background-color:#0275d8; color: white; " type="submit" placeholder="submit"/></div>
 <h3>Are You Hiring?<u id="post_jobs" onclick="post_jobs()"> Post Jobs </u></h3>
 </div>
 </div> 
@@ -411,31 +411,49 @@
          {
              window.open("sign.html")
          }
+         
+   if(localStorage.getItem("login_details"==null))
+   {
+         localStorage.setItem("login_details",JSON.stringify([]))
+   }
 
          function signup()
          {
+             //getting value and set in string
             var mail=document.querySelector("#mail").value;
-            var pass=document.querySelector("#password").value;
-            var details=[{mail,pass}];
-            console.log(details)
-            var login_details=JSON.stringify(details);
-            localStorage.setItem("login_details",login_details);
-            if(login_details!=null)
-            {
-                for(var i=0;i<login_details.length;i++)
-                {
-                     if(mail==login_details[i].mail)
-                     {
-                         console.log("success")
-                     }
-                     else
-                     {
-                         alert("mail already in used")
-                     }
-                }
-            } 
+            var pass=document.querySelector("#password").value;   
+            var tobeadd={"mail":mail,"pass":pass};
+          
+            //creating  localstrage
+             let data=JSON.parse(localStorage.getItem("login_details"));
+             //adding data
+         
+            // console.log(tobeadd)
+             //updating localstorage
+             localStorage.setItem("login_details",JSON.stringify(data));
+           //  console.log(data)
 
-         }
+           var cnt=0;
+           if(data!=null)
+               {
+                data.forEach(element =>cnt++);
+                let b=false;
+                 for(var i=0;i<cnt;i++)
+                  {
+                    if( mail==data[i].mail)
+                     {
+                         b=true;
+                       alert("Email already exist login");
+                       break;
+                    }
+                 }
+                  if(b==false)
+                  {
+                    data.push(tobeadd);
+                  }
+               localStorage.setItem("login_details",JSON.stringify(data));
+              }
+        }
     </script>
 
 </body>
