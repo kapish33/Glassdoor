@@ -29,6 +29,8 @@
 .right {
   background-color: white;
   padding: 3% 4%;
+  height: 500px;
+  border-radius: 5px;
 }
 .right * {
   background-color: white;
@@ -45,9 +47,9 @@ button {
   background-color: #0c4085;
   color: white;
 }
-.wrap {
-  /* display: none; */
-}
+/* .wrap {
+  display: none;
+} */
 .wrap div {
   background-color: #f5f6f7;
   padding: 0px 2%;
