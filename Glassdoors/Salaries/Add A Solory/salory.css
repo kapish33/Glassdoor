@@ -36,5 +36,13 @@
 }
 .main {
   display: grid;
-  grid-template-columns: 0.5fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
+}
+#next {
+  background-color: #1c5092;
+  color: white;
+  padding: 1% 4%;
+  font-size: 20px;
+  border: 0px;
+  float: right;
 }
