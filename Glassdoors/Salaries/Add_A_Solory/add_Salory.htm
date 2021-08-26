@@ -13,23 +13,72 @@
     <div class="cards">
       <div class="cardleft">
         <h1>What would you like to contribute?</h1>
+        <br />
         <p>
           Everything you add helps others find a job and company they'll love.
           Thanks!
         </p>
         <div class="main">
-          <div class="anon">Add your anonymous...</div>
-          <div class="radio">
-            <input type="radio" id="age1" name="age" value="Company Review" />
+          <div class="anon"><h4>Add your anonymous...</h4></div>
+          <div class="radioi">
+            <input
+              type="radio"
+              class="sel"
+              id="age1"
+              name="age"
+              value="Company Review"
+              checked="true"
+            />
+
             <label for="age1">Company Review</label><br />
-            <input type="radio" id="age2" name="age" value="Salary" />
+            <input
+              type="radio"
+              class="sel"
+              id="age2"
+              name="age"
+              value="Salary"
+            />
             <label for="age2">Salary</label><br />
-            <input type="radio" id="age3" name="age" value="Interview Review" />
+            <input
+              type="radio"
+              class="sel"
+              id="age3"
+              name="age"
+              value="Interview Review"
+            />
             <label for="age3">Interview Review</label><br />
-            <input type="radio" id="age4" name="age" value="Benefits Review" />
+            <input
+              type="radio"
+              class="sel"
+              id="age4"
+              name="age"
+              value="Benefits Review"
+            />
             <label for="age4">Benefits Review</label><br /><br />
           </div>
         </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr">
+          <div>
+            <p id="lowerleftup">Are you a current or former employee?</p>
+            <br />
+            <p id="lowerleftdown">Employer's Name*</p>
+          </div>
+          <div>
+            <button id="current" onclick="current()" style="padding: 2% 6%">
+              Current
+            </button>
+            <button id="former" onclick="former()" style="padding: 2% 6%">
+              Former
+            </button>
+            <input
+              style="margin: 3% 0%; padding: 2% 6%"
+              type="text"
+              name=""
+              id=""
+            />
+          </div>
+        </div>
+        <input id="next" type="submit" value="NEXT" />
       </div>
 
       <!-- crad righr had been done -->
