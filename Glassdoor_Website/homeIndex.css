@@ -115,7 +115,7 @@ a {
     border-radius: 5px;
     margin-left: 2%;
 }
-.role:hover {
+.role:hover, #cap1:hover {
     cursor: pointer;
     -moz-box-shadow: 8px 8px 14px lightgray;
     -webkit-box-shadow: 8px 8px 14px lightgray;
@@ -229,46 +229,109 @@ a {
     clear: both;
     display: grid;
     grid-gap: 3%;
-    grid-template-areas: "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r"
-                         "z z z r r r r";
+    grid-template-areas: "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r"
+                         "z z z r r r r r r r";
+}
+#cap1 {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#upl {
+    height: 36px;
+    width: 134px;
+}
+#finish {
+    margin-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    padding: 14px;
+    font-weight: bold;
+    color: white;
+    background-color: #1861BF;
+    cursor: pointer;
+    font-size: 15px;
+}
+#sub:hover {
+    color: white;
+    background-color: #1861BF;
+    cursor: pointer;
+}
+#finish:hover {
+    background-color: #0C4085;
+}
+#cc1, #cc2 {
+    padding: 9px;
+}
+#gr {
+    color: gray;
+    margin-top: 2px;
+}
+#profile {
+    height: 56px;
+}
+#prg {
+    width: 100%;
+}
+.jobtitle {
+    display: flex;
+}
+.jobtitle > div > img {
+    height: 24px;
+}
+.matter:hover {
+    color: darkblue;
+}
+.matter {
+    cursor: pointer;
+    margin-left: 3px;
+    font-weight: bold;
+    color: #1861BF;
+}
+#cc1 {
+    border-bottom: 1px solid lightgray;
+}
+#locn {
+    margin: 3px;
 }
 .small {
     font-size: 12px;
 }
 #left {
-    background-color: black;
     grid-area: z;
 }
-#right > div {
+#rright > div {
    margin-top: 2%;
 }
 #right {
     grid-area: r;
+}
+#rright {
     display: grid;
     grid-template-areas:    "a a a a"
                             "b b b b"
@@ -283,20 +346,18 @@ a {
                             "h h h h"
                             "h h h h"
                             "h h h h"
-                            "h h h h"
-                            "i i i i"
-                            "i i i i"
-                            "i i i i"
-                            "i i i i"
-                            "j j j j"
-                            "k k l l"
-                            "k k l l"
-                            "m m n n"
-                            "m m n n"
-                            "o o o o"
-                            "p p p p"
-                            "p p p p"
-                            "q q q q";
+                            "h h h h";
+}
+.inpTxt:focus {
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px 1px lightblue;
+}
+.inpTxt:hover {
+    border: 1px solid black;
+}
+.inpTxt {
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 #location {
     cursor: pointer;
@@ -331,11 +392,43 @@ a {
     grid-area: g;
 }
 #dontmiss {
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid lightgray;
     grid-area: h;
 }
-#continue {
-    grid-area: i;
+#sub {
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 12px;
 }
+#continue {
+    padding: 2px;
+}
+#cflex {
+    display: flex;
+    padding: 8px;
+    padding-top: 16px;
+    font-size: 15px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#cfin > div> img{
+   
+    height: 24px;
+    width: 24px;
+}
+#hk {
+    display: flex;
+}
+#cfin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*
 #xplorsalary {
     grid-area: j;
 } 
@@ -359,4 +452,5 @@ a {
 }
 #seemore {
     grid-area: q;
-}
+} */
+
