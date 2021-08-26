@@ -1,0 +1,37 @@
+* {
+  background-color: #eaeaea;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.mainhead {
+  background-color: white;
+}
+.mainhead img {
+  height: 35px;
+  margin: 0.21%;
+}
+.bigger {
+  display: grid;
+  grid-template-columns: 1.9fr 0.9fr;
+  gap: 1.5%;
+  margin: auto;
+  width: 80%;
+}
+.right {
+  background-color: rgb(255, 255, 255);
+  padding: 6%;
+  line-height: 1.5;
+}
+.right * {
+  background-color: rgb(255, 255, 255);
+}
+.left {
+  background-color: rgb(255, 255, 255);
+  padding: 5%;
+}
+
+.box {
+  padding: 0% 20%;
+}
