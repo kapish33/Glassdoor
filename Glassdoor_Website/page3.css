@@ -1,0 +1,38 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#top > p > a {
+    
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: white;
+}
+#top > p {
+    padding: 16px;
+    font: 19.2px, 'Lato', sans-serif;
+}
+#top {
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #00A1DF;
+    padding: 0px;
+}
+body {
+    color: #20262e;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+div {
+    overflow: hidden;
+}
