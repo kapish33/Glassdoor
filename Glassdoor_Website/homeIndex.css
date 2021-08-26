@@ -264,11 +264,13 @@ a {
     background-color: black;
     grid-area: z;
 }
-#right > div {
+#rright > div {
    margin-top: 2%;
 }
 #right {
     grid-area: r;
+}
+#rright {
     display: grid;
     grid-template-areas:    "a a a a"
                             "b b b b"
@@ -283,20 +285,18 @@ a {
                             "h h h h"
                             "h h h h"
                             "h h h h"
-                            "h h h h"
-                            "i i i i"
-                            "i i i i"
-                            "i i i i"
-                            "i i i i"
-                            "j j j j"
-                            "k k l l"
-                            "k k l l"
-                            "m m n n"
-                            "m m n n"
-                            "o o o o"
-                            "p p p p"
-                            "p p p p"
-                            "q q q q";
+                            "h h h h";
+}
+.inpTxt:focus {
+    border: 1px solid lightgray;
+    box-shadow: 1px 1px 5px 1px lightblue;
+}
+.inpTxt:hover {
+    border: 1px solid black;
+}
+.inpTxt {
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 #location {
     cursor: pointer;
@@ -331,11 +331,46 @@ a {
     grid-area: g;
 }
 #dontmiss {
+    border-radius: 6px;
+    padding: 8px;
+    border: 1px solid lightgray;
     grid-area: h;
 }
-#continue {
-    grid-area: i;
+#sub {
+    border: 1px solid blue;
+    border-radius: 3px;
+    padding: 12px;
 }
+#continue {
+    padding: 2px;
+}
+#cflex {
+    display: flex;
+    padding: 8px;
+    padding-top: 16px;
+    font-size: 15px;
+    width: 50%;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#cflex:hover {
+
+}
+#cfin > div> img{
+   
+    height: 24px;
+    width: 24px;
+}
+#hk {
+    display: flex;
+}
+#cfin{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+/*
 #xplorsalary {
     grid-area: j;
 } 
@@ -359,4 +394,5 @@ a {
 }
 #seemore {
     grid-area: q;
-}
+} */
+
