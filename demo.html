@@ -213,6 +213,10 @@
         {
             flex-grow: 1;
         }
+        .facebookButton:hover
+        {
+            background-color:#062347 ;
+        }
 
 
     </style>
@@ -234,8 +238,8 @@
 <div class="login_info_in" style="padding-top: 3%;">
 <div class="a"><h1>Find The Job That Fits Your Life</h1> </div>
 <p style="color: white; font-size: 13px; margin-bottom: 0;">By continuing, you agree to our <u id="terms" onclick="terms()"> Terms of Use and Privacy Policy</u></p>
-<div class="b" ><button style="background-color: #0275d8; "> Continue with Facebook</button></div>
-<div class="c" ><button style="color: #d86902; ">Continue with Google</button></div>
+<div class="b" ><button class="facebookButton" style="background-color: #0275d8;"  onclick="usingFacebook()"> Continue with Facebook</button></div>
+<div class="c" ><button id="googleButton"  style="color: #d86902;" onclick="usingGoogle()">Continue with Google</button></div>
 <div> <hr style="width: 30%;"></div>
 <div> <input id="mail" type="email" placeholder="Create account with Email"></div>
 <div><input id="password" type="password" placeholder="Password"></div>
@@ -409,7 +413,7 @@
 
          function sign()
          {
-             window.open("sign.html")
+            window.location.href="sign.html"
          }
          
    if(localStorage.getItem("login_details"==null))
@@ -423,8 +427,9 @@
             var mail=document.querySelector("#mail").value;
             var pass=document.querySelector("#password").value;   
             var tobeadd={"mail":mail,"pass":pass};
+            tobeadd=JSON.stringify(tobeadd)
           
-            //creating  localstrage
+         
              let data=JSON.parse(localStorage.getItem("login_details"));
              //adding data
          
@@ -434,7 +439,7 @@
            //  console.log(data)
 
            var cnt=0;
-           if(data!=null)
+           if(data!=null )
                {
                 data.forEach(element =>cnt++);
                 let b=false;
@@ -445,7 +450,7 @@
                          b=true;
                        alert("Email already exist login");
                        break;
-                    }
+                     }
                  }
                   if(b==false)
                   {
@@ -453,6 +458,22 @@
                   }
                localStorage.setItem("login_details",JSON.stringify(data));
               }
+              else
+              {
+                data.push(tobeadd);
+                localStorage.setItem("login_details",JSON.stringify(data));
+
+              }
+        }
+        function usingFacebook()
+        {
+             setTimeout(() => {
+                window.location.href="facebook.html"
+             }, 1000);
+        }
+        function usingGoogle()
+        {
+
         }
     </script>
 

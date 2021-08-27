@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+    <title>Welcome to profile</title>
+    <style>
+         *
+        {
+            font-family: 'Open Sans', sans-serif;
+           
+        }
+         
+        p 
+        {
+            color: rgb(56, 55, 55);
+            width: 60%;
+            margin: auto;
+            margin-top: 1%;
+            font-size: 17px;
+            margin-bottom: 4%;
+            text-align: center;
+        }
+        .last
+        {
+            color: rgb(56, 55, 55);
+            margin: auto;
+            margin-top: 10%;
+            width: 80%;
+            font-size: 17px;
+        }
+      
+     .heading
+    {
+       font-size: 25px;
+       font-weight: 800;
+    }
+    .leftSide li
+    {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .leftSide p
+    {
+       font-size: 19px;
+       font-weight: 700;
+       color: black;
+       text-align: left;
+    }
+    
+
+    .rightSide
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .outside
+    {
+        
+        display: grid;
+        width: 65%;
+        margin:auto;
+        grid-template-columns: repeat(3, minmax(110px, auto));
+
+    }
+   
+
+    .mid{
+
+      width:2px ;
+      height: 100%;
+      background-color: rgb(204, 201, 201);
+      margin: auto;
+    }
+
+  
+    button
+    {
+        width: 40%;
+        height: 50px;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        background-color:#1861BF ;
+        border-radius: 5px;
+        margin-left: 30%; 
+        vertical-align: middle;
+    }
+
+    button:hover
+    {
+        background-color:#0f4181 ;
+        cursor: pointer;
+    }
+    </style> 
+</head>
+<body>
+
+     
+
+    <div class="heading" style="text-align: center;">Finish Your Glassdoor Profile!</div>
+     <p>Finishing your profile on Glassdoor helps us to better customise job opportunities 
+         for you, share relevant company review and salary information, and allows you to 
+         be discovered by employers.
+     </p>
+     <div class="outside">
+         <div class="leftSide" style="font-size: 20px; font-weight: 800;">
+             <li><div><img src="1.png"></div> <p>Apply to jobs faster</p> </li>
+             <li><div><img src="2.png"></div><p>Personalised search results</p> </li>
+             <li><div><img src="3.png"></div><p>Increase visibility to employers</p></li>
+         </div>
+         <div class="mid"></div>
+         <div class="rightSide">
+         <div><button>Finish my profile</button></div>
+         <div class="last"> Don’t worry, your reviews will always remain anonymous.</div>
+         </div>
+     </div>
+       <br><br><br>
+</body> 
+</html>
