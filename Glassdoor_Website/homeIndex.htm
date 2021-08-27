@@ -36,7 +36,7 @@
                 <div id="td" class="tt"><img src="static\menu.JPG" alt=""></div>
             </div>
         </div> -->
-        <form action="">
+        <div>
             <div id="topSearch">
                 <div id="a1">
                     <img class="sizeIt" src="static\glassd.JPG" alt="">
@@ -61,7 +61,7 @@
                     <input  class="sizeIt" type="text" value="Kolkata" name="" id="ta4" placeholder="Enter your location">
                 </div>
                 <div id="a5" class="aas">
-                    <input id="submt" type="submit" value="Search">
+                    <input id="submt" onclick="addJobs()" type="submit" value="Search">
                 </div>
                 <div id="a6" class="aas">
                     <img class="sizeIt" src="static\notification.JPG" id="noti" alt=""
@@ -74,7 +74,7 @@
                     onmouseleave="this.src='static/icon_person.JPG'">
                 </div>
             </div>
-        </form>
+        </div>
         <hr>
         <div id="top3">
             <div>
@@ -157,11 +157,11 @@
             </div>
             <div id="right">
                 <div id="rright">
-                    <div id="location" class="long">
+                    <div id="location" style="visibility: hidden;" class="long">
                         <img src="" alt="">
                         Is <strong>Calcutta</strong> your location? <a href=""><strong>Add a location to your profile</strong></a>
                     </div>
-                    <div id="xplor" class="long">
+                    <div id="xplor" style="visibility: hidden;" class="long">
                         <h1>Jobs recommended for You</h1>
                         <br>
                         <p>
@@ -171,7 +171,7 @@
                     <div id="r1" class="role">
                         <div class="roleLeft">
                             <div class="up">
-                                <img class="visi" src="static\spa.JPG" alt="">
+                                <img id="img1" class="visi" src="static\spa.JPG" alt="">
                             </div>
                             <div class="down">
     
@@ -200,7 +200,7 @@
                     <div id="r2" class="role">
                         <div class="roleLeft">
                             <div class="up">
-                                <img src="static\spa.JPG" alt="">
+                                <img id="img2" src="static\spa.JPG" alt="">
                             </div>
                             <div class="down">
     
@@ -229,7 +229,7 @@
                     <div id="r3" class="role">
                         <div class="roleLeft">
                             <div class="up">
-                                <img src="static\spa.JPG" alt="">
+                                <img id="img3" src="static\spa.JPG" alt="">
                             </div>
                             <div class="down">
     
@@ -258,7 +258,7 @@
                     <div id="r4" class="role">
                         <div class="roleLeft">
                             <div class="up">
-                                <img id="i4" src="static\spa.JPG" alt="">
+                                <img id="img4" src="static\spa.JPG" alt="">
                             </div>
                             <div class="down">
     
@@ -307,7 +307,7 @@
                                 </div>
                                 <div>
                                     <label class="small" for="jobLoc">Location</label><br>
-                                    <input id="jobLoc" class="inpTxt" type="text" placeholder="Enter a location" value="Calcutta"> <br>
+                                    <input id="jobLoc" class="inpTxt" type="text" placeholder="Enter a location" value="Kolkata"> <br>
                                     <p id="war" style="visibility:hidden; color: red;">Please select a location from the list.</p>
                                 </div>
                                 <div>

@@ -25,8 +25,6 @@ tex1.onblur = () => {
 
 var salaryButton = document.getElementById("t33");
 
-let locationValue = document.getElementById("ta4").value;
-
 salaryButton.addEventListener("click", () => {
     window.location = '../Glassdoors/Salaries/Salaries.htm';
 });
@@ -57,7 +55,7 @@ locBox.oninput = function(e) {
 
  roles.push(new addRole("Junior Full Stack Developer", "Dreamz Interactive", "Kolkata", 1, "non"));
  roles.push(new addRole("Junior Full Stack Developer", "Dreamz Interactive", "Kolkata", 2, "non"));
- roles.push(new addRole("Application Developer : Java Full Stack", "IBM", "Kolkata", 3, "https://media.glassdoor.com/sql/354/ibm-squareLogo-1626088539071.png"));
+ roles.push(new addRole("Java Full Stack", "IBM", "Kolkata", 3, "https://media.glassdoor.com/sql/354/ibm-squareLogo-1626088539071.png"));
  roles.push(new addRole("Sr. Full Stack Developer", "Digital Avenues Pvt. Ltd.", "Kolkata", 9, "non"));
  roles.push(new addRole("Full Stack Developer", "Red Apple", "Delhi", 10, "non"));
  roles.push(new addRole("Junior Full Stack Developer", "Dreamz Interactive", "Delhi", 1, "non"));
@@ -98,6 +96,8 @@ locBox.oninput = function(e) {
                 d.style.opacity = "0.9";
                 d.style.backgroundColor = "black"
             }
+            document.getElementById("xplor").style.visibility = "hidden";
+            document.getElementById("location").style.visibility = "hidden";
         }, 600);
     });
 
@@ -110,15 +110,43 @@ locBox.oninput = function(e) {
         c.style.backgroundColor = "white";
         d.style.opacity = "1";
         d.style.backgroundColor = "white";
+        document.getElementById("xplor").style.visibility = "visible";
+        document.getElementById("location").style.visibility = "visible";
     });
+
+    addJobs();
+
+
+ }
+
+ function appendToFrontend(index, r, c, l, d, i) {
+     var zr = document.getElementById(`role${index}`);
+     var zc = document.getElementById(`com${index}`);
+     var zl = document.getElementById(`loca${index}`);
+     var zd = document.getElementById(`day${index}`);
+     var zi = document.getElementById(`img${index}`);
+
+     zr.innerText = r;
+     zc.innerText = c;
+     zl.innerText = l;
+     zd.innerText = d + "d";
+     if (i !== "non") {
+        zi.setAttribute('src', i);
+     }
+     else
+     zi.setAttribute('src', `static/spa.JPG`);
  }
 
 function addJobs() {
-    let count = 0;
-    // let 
-    // roles.forEach(element => {
-        
-    // });
+    let locationValue = document.getElementById("ta4").value;
+    alert(locationValue)
+    let count = 1;
+    for (let i = 0; i < roles.length && count <= 4; i++) {
+        const element = roles[i];
+        if (element.location === locationValue) {
+            appendToFrontend(count++, element.role, element.company, element. location, element.days, element.image)
+        }
+    }
 }
 
  window.onload = doIt;
