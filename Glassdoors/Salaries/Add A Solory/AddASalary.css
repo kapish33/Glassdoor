@@ -4,6 +4,7 @@
   padding: 0%;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
 }
 .mainhead {
   background-color: white;
@@ -30,8 +31,39 @@
 .left {
   background-color: rgb(255, 255, 255);
   padding: 5%;
+  line-height: 1.5;
 }
 
 .box {
-  padding: 0% 20%;
+  padding: 0% 10%;
 }
+.rupees:empty {
+  background-color: red;
+}
+/* adding css for input  boxes */
+input {
+  width: 100%;
+  padding: 1% 0%;
+  border: 1px solid black;
+}
+input:hover {
+  box-shadow: 0 3px 10px #0c4085;
+  /* border: 1px solid #0c4085; */
+}
+/* adding exoperience */
+.experience {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #0c4085;
+}
+.experience * {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #0c4085;
+  padding: 1%;
+}
+.experience :hover {
+  background-color: #0c4085;
+  color: white;
+}
+/* // adding Do you get bonuses, tips, or sales commission? */
