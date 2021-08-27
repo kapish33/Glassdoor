@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        .signin
+        {
+           height: 700px;
+           background-image: url("img.jpg"); 
+           background-size:     cover;                      
+           background-repeat:   no-repeat;
+           background-size: 100%;
+           position: relative;
+           width: 100%;
+        }
+
+        .signin::before 
+        {
+         content: "";
+         background-image: url("img.jpg");
+         position: absolute;
+         background-size:cover;                
+         top: 0; bottom: 0; left: 0; right: 0; 
+         background: rgba(0, 0, 0, 0.50);
+         }
+
+         .details div
+         {
+            position: relative;
+         }
+         .details>:first-child
+         {
+            margin-top: 20%;
+         }
+
+         .details 
+         {
+             width: 30%;
+             margin: auto;
+             display: flex;
+             flex-direction: column;
+         }
+
+         .details input
+         {
+             width: 100%;
+             margin-top: 5%;
+             height: 40px;
+             font-size: 17px;
+         }
+    </style>
+</head>
+<body>
+
+    <div class="signin">    
+    <div class="details">
+        <div><input type="email" placeholder="Enter email"></div>
+        <div><input type="password" placeholder="Enter Password"></div>
+        <div><input style="background-color:#0275d8; width: 30%; margin-left: 35%; color: white; " type="submit" placeholder="submit"></div>
+    </div>
+    </div>
+
+</body>
+</html>
