@@ -219,19 +219,135 @@
         }
 
 
+    .first_child
+    {
+        width: 350%;
+        border: gray solid 1px;
+        display: grid;
+        position: relative;
+        background-size:cover;                
+        grid-template-columns: repeat(3, minmax(110px, auto));
+        display: none;   
+    } 
+    .topButton
+    {
+        border: #1861BF 1px solid;
+        font-size: 18px;
+        font-weight: 500;
+        height: 40px;
+        color: #1861BF;
+        background-color: white;
+        border-radius: 5px;
+    }
+    .topButton:hover
+    {
+        background-color: #1861BF;
+        cursor: pointer;
+        color: white;
+    }
+    .topUsingFlex
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .topUsingFlex div
+    {
+       padding: 1%;
+    }
+    .topimage
+    {
+        width: 100%;
+    }
+    .p1:hover + .first_child 
+    {
+       display: block; 
+    }
+    .p2:hover + .first_child 
+    {
+       display: block; 
+    }
+    .p3:hover + .first_child 
+    {
+       display: block; 
+    }
+    .p4:hover + .first_child 
+    {
+       display: block; 
+    }
+
     </style>
 </head>
 <body>
     <div class="top">
     <div><h1 style="margin-top: 2px; margin-bottom: 10px;">glassdoor</h1></div>  
-    <div><p>Jobs</p></div>
-    <div><p>Companies</p></div>
-    <div><p>Salaries</p></div>
-    <div><p>Iterviews</p></div>
+    <div ><p class="p1">Jobs</p>
+    
+        <div class="first_child">
+            <div class="topUsingFlex">
+            <div><h1 style="margin-top: 12px; margin-bottom: 0;">Find the right Job</h1></div>
+            <div><p>Millions of jobs. Search by what matters to you 
+                and find the one that's right for you.</p></div>
+            <div> <button class="topButton">Start Using Glassdoor</button></div>
+        </div>
+        <div>
+            <img class="topimage" src="jobs@2x.png" alt="">
+        </div>
+        </div>
+
+    
+    </div>
+    <div><p class="p2">Companies</p>
+    
+        <div class="first_child">
+            <div class="topUsingFlex">
+            <div><h1 style="margin-top: 12px; margin-bottom: 0;">Read Millions of reviews </h1></div>
+            <div><p>Read anonymous reviews on over 600,000 companies worldwide from the people that work there.</p></div>
+            <div> <button class="topButton">Start Using Glassdoor</button></div>
+        </div>
+        <div>
+            <img class="topimage" src="reviews@2x.png" alt="">
+        </div>
+        </div>
+
+    </div>
+
+    <div><p class="p3">Salaries</p>
+        <div class="first_child">
+            <div class="topUsingFlex">
+            <div><h1 style="margin-top: 12px; margin-bottom: 0;">Compare Salary</h1></div>
+            <div><p>Are you paid fairly? Get a free, personalised salary estimate and 
+                compare with millions of salaries.</p></div>
+            <div> <button class="topButton">Start Using Glassdoor</button></div>
+        </div>
+        <div>
+            <img class="topimage" src="salaries@2x.png" alt="">
+        </div>
+        </div>
+
+    </div>
+    <div><p class="p4">Iterviews</p>
+    
+        <div class="first_child">
+            <div class="topUsingFlex">
+            <div><h1 style="margin-top: 12px; margin-bottom: 0;">Prepare for Interviews</h1></div>
+            <div><p>Read interview questions ahead of time so you can prep with confidence.</p></div>
+            <div> <button class="topButton">Start Using Glassdoor</button></div>
+        </div>
+        <div>
+            <img class="topimage" src="interview@2x.png" alt="">
+        </div>
+        </div>
+
+    </div>
     <div  id="top1"><p>Employers</p></div>
-    <div id="top2"><img src="post_jobs.png" alt="svg" style="width: 95px; height: 45px"></div>
+    <div id="top2" ><img  src="post_jobs.png" onclick="postJobs()" alt="svg" style="width: 95px; height: 45px"></div>
     <div id="top3" onclick="sign()"><p>Sign In</p></div>
 </div>
+
+<!------------------------------------------------------------------------------------------>
+
+
+<!------------------------------------------------------------------------------------------>
 
 
 <div id="login_info" >
@@ -287,7 +403,8 @@
     <p>Millions of people are searching for jobs, salary 
         information, company reviews, and interview questions. 
         See what others are looking for on Glassdoor today.</p>
-     <p onclick="show()" id ="point" style="cursor: pointer; font-size: 30px; color: #0277BD;">˅</p>
+     <!--<p onclick="show()" id ="point" style="cursor: pointer; font-size: 
+      30px; color: #0277BD;">˅</p> --->
 </div>
 
 
@@ -474,6 +591,10 @@
         function usingGoogle()
         {
 
+        }
+        function postJobs()
+        {
+          window.location.href="https://www.glassdoor.co.in/post-job/?src=site-header-locked-b2c";
         }
     </script>
 
