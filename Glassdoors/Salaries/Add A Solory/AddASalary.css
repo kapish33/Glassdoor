@@ -26,12 +26,15 @@
   line-height: 1.5;
 }
 .right * {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 .left {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 5%;
   line-height: 1.5;
+}
+.left * {
+  background-color: white;
 }
 
 .box {
@@ -43,7 +46,7 @@
 /* adding css for input  boxes */
 input {
   width: 100%;
-  padding: 1% 0%;
+  padding: 1% 0% 0% 2%;
   border: 1px solid black;
 }
 input:hover {
@@ -67,3 +70,21 @@ input:hover {
   color: white;
 }
 /* // adding Do you get bonuses, tips, or sales commission? */
+#submi {
+  float: right;
+  padding: 2% 10%;
+}
+
+#submi button {
+  background-color: #0c4085;
+  color: white;
+  border: 0px;
+  width: 150%;
+}
+
+@media only screen and (max-width: 900px) {
+  .bigger {
+    display: flex;
+    flex-direction: column;
+  }
+}
