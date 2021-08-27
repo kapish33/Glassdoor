@@ -58,17 +58,54 @@
           Please enter your occupation.
         </p>
         <br />
+
+        <!-- yeras of location -->
+        <label for="exper"
+          ><p style="font-size: 12px">Years of Experience</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="exper"
+          placeholder="Years of Experience "
+          value="Years of Experience"
+        />
+        <p id="experv" style="visibility: hidden; color: red; font-size: 10px">
+          Years of Experience Can't be Negative
+        </p>
+        <br />
+
+        <!-- loication adding -->
+
+        <label for="locations"
+          ><p style="font-size: 12px">Employment Status *</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="locations"
+          placeholder="Location"
+          value="Location"
+        />
+        <p
+          id="locationvs"
+          style="visibility: hidden; color: red; font-size: 10px"
+        >
+          Please enter your job location.
+        </p>
+        <br />
+
         <!-- // Employment Status * -->
 
         <label for="employeest"
-          ><p style="font-size: 12px">Job Title *</p></label
+          ><p style="font-size: 12px">Employment Status *</p></label
         >
         <input
           type="text"
           name=""
           id="employeest"
-          placeholder="Employer*"
-          value="Employer"
+          placeholder="Employer Status"
+          value="Full Time / Part Time"
         />
         <p
           id="employeestv"
@@ -79,7 +116,9 @@
         <br />
 
         <!-- Employee name -->
-        <label for="employee"><p style="font-size: 12px">Job Title *</p></label>
+        <label for="employee"
+          ><p style="font-size: 12px">Employer's Name *</p></label
+        >
         <input
           type="text"
           name=""
@@ -94,6 +133,30 @@
           Please correct the employer name
         </p>
         <br />
+
+        <!-- former employee -->
+        <p style="font-size: 12px">Are you a current or former employee? *</p>
+
+        <div class="experience">
+          <div class="box1">Current</div>
+          <div class="box2">Former</div>
+        </div>
+        <br />
+        <!-- gender -->
+
+        <p style="font-size: 12px">
+          Specify your gender to contribute anonymously to Glassdoor research on
+          fair wages. (Optional)
+        </p>
+
+        <div class="experience">
+          <div class="box1">Female</div>
+          <div class="box2">Male</div>
+          <div class="box2">TransGender</div>
+        </div>
+        <br />
+
+        <div id="submi"><button type="submit">Submit Salary</button></div>
       </div>
       <!-- 1st -->
 
