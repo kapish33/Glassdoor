@@ -428,29 +428,71 @@ a {
     display: flex;
     justify-content: space-between;
 }
-/*
-#xplorsalary {
-    grid-area: j;
-} 
-#grph1 {
-    grid-area: k;
+#topSearch {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
-#grph2 {
-    grid-area: l;
+.sizeIt {
+    height: 40px;
 }
-#grph3 {
-    grid-area: m;
+#searc, #ta4 {
+    border: none;
+    font-size: 16px;
+    padding: 2px;
 }
-#grph4 {
-    grid-area: n;
+#searc:focus, #ta4:focus {
+    outline: none;
 }
-#company {
-    grid-area: o;
+#a2, #a3, #ta4 {
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
-#dd {
-    grid-area: p;
+#arow {
+    height: 16px;
 }
-#seemore {
-    grid-area: q;
-} */
+#a3 {
+    padding: 11px;
+}
+#a3:hover {
+    border: 1px solid gray;
+}
+#submt {
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #0CAA41;
+    border: none;
+    border-radius: 6px;
 
+}
+#submt:hover {
+    cursor: pointer;
+    background-color: green;
+}
+#ta4 {
+    padding: 6px;
+    height: 47px;
+}
+#a2 {
+    display: flex;
+    width: 350px;
+}
+#searc {
+    width: 300px;
+}
+#a3 {
+    display: flex;
+    flex-direction: row;
+}
+#a1 {
+    margin-inline: 7px;
+}
+.aas {
+    margin-left: 2.5%;
+}
+#a1, #a3 {
+    cursor: pointer;
+}
