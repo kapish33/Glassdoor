@@ -139,7 +139,6 @@ locBox.oninput = function(e) {
 
 function addJobs() {
     let locationValue = document.getElementById("ta4").value;
-    alert(locationValue)
     let count = 1;
     for (let i = 0; i < roles.length && count <= 4; i++) {
         const element = roles[i];
@@ -148,5 +147,11 @@ function addJobs() {
         }
     }
 }
+
+let finButton = document.getElementById('finish');
+
+finButton.addEventListener('click', function() {
+    window.location = "../../../Finish.html";
+})
 
  window.onload = doIt;
