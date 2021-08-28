@@ -2,7 +2,10 @@
 margin: 0%;
 padding: 0%;
 box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
 }
+
+
 
 #top > p > a {
     
@@ -447,7 +450,7 @@ a {
 #searc:focus, #ta4:focus {
     outline: none;
 }
-#a2, #a3, #ta4 {
+#a2,  #ta4 {
     border: 1px solid lightgray;
     border-radius: 5px;
 }
@@ -457,9 +460,7 @@ a {
 #a3 {
     padding: 11px;
 }
-#a3:hover {
-    border: 1px solid gray;
-}
+
 #submt {
     padding: 20px;
     font-size: 18px;
