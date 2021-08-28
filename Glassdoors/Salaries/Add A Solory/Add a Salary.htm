@@ -14,7 +14,7 @@
       <div class="left">
         <h2>Rate a Company</h2>
         <p>Your anonymous salary will help other job seekers.</p>
-        <label class="small" for="jobLoc">Location</label><br />
+        <label class="small" for="jobLoc">Salory</label><br />
         <input
           id="jobLoc"
           class="inpTxt"
@@ -28,9 +28,9 @@
         </p>
         <br />
         <div class="experience">
-          <div class="box1">Per Year</div>
-          <div class="box2">Per Hour</div>
-          <div class="box3">Per Month</div>
+          <div id="year" class="box1">Per Year</div>
+          <div id="hour" class="box2">Per Hour</div>
+          <div id="month" class="box3">Per Month</div>
         </div>
         <br />
 
@@ -39,9 +39,9 @@
           Do you get bonuses, tips, or sales commission?
         </p>
 
-        <div class="experience">
-          <div class="box1">Yes</div>
-          <div class="box2">No</div>
+        <div id="commision" class="experience">
+          <div id="Yes" class="box1">Yes</div>
+          <div id="No" class="box2">No</div>
         </div>
         <br />
         <!-- Job Details * -->
@@ -52,7 +52,7 @@
           name=""
           id="jobtitle"
           placeholder="Job Title*"
-          value="Backend Deeloper"
+          value="Backend Developer"
         />
         <p id="dev" style="visibility: hidden; color: red; font-size: 10px">
           Please enter your occupation.
@@ -137,9 +137,9 @@
         <!-- former employee -->
         <p style="font-size: 12px">Are you a current or former employee? *</p>
 
-        <div class="experience">
-          <div class="box1">Current</div>
-          <div class="box2">Former</div>
+        <div id="former" class="experience">
+          <div id="Current" class="box1">Current</div>
+          <div id="Former" class="box2">Former</div>
         </div>
         <br />
         <!-- gender -->
@@ -149,14 +149,19 @@
           fair wages. (Optional)
         </p>
 
-        <div class="experience">
-          <div class="box1">Female</div>
-          <div class="box2">Male</div>
-          <div class="box2">TransGender</div>
+        <div id="gender" class="experience">
+          <div id="Female" class="box1">Female</div>
+          <div id="Male" class="box2">Male</div>
+          <div id="Trans Gender" class="box2">Trans Gender</div>
         </div>
         <br />
 
-        <div id="submi"><button type="submit">Submit Salary</button></div>
+        <input
+          onclick="submitSalory()"
+          id="submi"
+          type="submit"
+          value="Submit Salary "
+        />
       </div>
       <!-- 1st -->
 

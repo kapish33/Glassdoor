@@ -24,6 +24,7 @@
   background-color: rgb(255, 255, 255);
   padding: 6%;
   line-height: 1.5;
+  height: 600px;
 }
 .right * {
   background-color: white;
@@ -53,6 +54,15 @@ input:hover {
   box-shadow: 0 3px 10px #0c4085;
   /* border: 1px solid #0c4085; */
 }
+input {
+  padding: 2%;
+  border: 1px solid grey;
+}
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
 /* adding exoperience */
 .experience {
   display: flex;
@@ -72,16 +82,16 @@ input:hover {
 /* // adding Do you get bonuses, tips, or sales commission? */
 #submi {
   float: right;
-  padding: 2% 10%;
-}
-
-#submi button {
   background-color: #0c4085;
   color: white;
-  border: 0px;
-  width: 150%;
+  font-size: 22px;
+  width: 25%;
 }
-
+#submi:hover {
+  color: rgb(230, 231, 229);
+  background-color: #39ff14;
+  box-shadow: 0 0 50px #39ff14;
+}
 @media only screen and (max-width: 900px) {
   .bigger {
     display: flex;
