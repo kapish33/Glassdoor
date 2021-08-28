@@ -155,3 +155,10 @@ finButton.addEventListener('click', function() {
 })
 
  window.onload = doIt;
+
+login = JSON.parse(localStorage.getItem("userNow"));
+
+ function loadActivity() {
+     let usr = document.getElementById("useremail");
+     usr.innerText = login;
+ }

@@ -9,36 +9,39 @@
 
     <title>Glassdoor Job Search</title>
     <style>
-        *
-        {
+        * {
             font-family: 'Open Sans', sans-serif;
             font-weight: bolder;
-            text-align: center;             
+            text-align: center;            
         }
-
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        input, button {
+            border: none;
+        }
          .top
          {
              display: grid;
              grid-template-columns: repeat(11,1fr);
              margin: 0.4%;
              
-         }   
-         
-         
+         } 
          .top>:first-child
          {
-             color: #0CAA41;
-             grid-column-start: 2;
+            color: #0CAA41;
+            grid-column-start: 2;
          }
 
          #top1
          {
-             grid-column-start: 9;
+            grid-column-start: 9;
          }
          #top2
          {
-             grid-column-start: 10;
-             cursor: pointer;
+            grid-column-start: 10;
+            cursor: pointer;
          }
          #top3
          {
@@ -353,11 +356,11 @@
 <div id="login_info" >
 <div class="login_info_in" style="padding-top: 3%;">
 <div class="a"><h1>Find The Job That Fits Your Life</h1> </div>
-<p style="color: white; font-size: 13px; margin-bottom: 0;">By continuing, you agree to our <u id="terms" onclick="terms()"> Terms of Use and Privacy Policy</u></p>
+<p style="color: white; font-size: 13px; margin-bottom: 0;">By continuing, you agree to our <u id="terms" style="border-bottom: 1px dotted white; text-decoration: none;" onclick="terms()"> Terms of Use</u> and <u id="terms" style="border-bottom: 1px dotted white; text-decoration: none;" onclick="goPrivacy()">Privacy Policy</u></p>
 <div class="b" ><button class="facebookButton" style="background-color: #0275d8;"  onclick="usingFacebook()"> Continue with Facebook</button></div>
 <div class="c" ><button id="googleButton"  style="color: #d86902;" onclick="usingGoogle()">Continue with Google</button></div>
 <div> <hr style="width: 30%;"></div>
-<div> <input id="mail" type="email" placeholder="Create account with Email"></div>
+<div> <input id="mail" class="" type="email" placeholder="Create account with Email"></div>
 <div><input id="password" type="password" placeholder="Password"></div>
 <div style="width: 30%; margin: auto;"><input onclick="signup()" style="background-color:#0275d8; color: white; " type="submit" placeholder="submit"/></div>
 <h3>Are You Hiring?<u id="post_jobs" onclick="post_jobs()"> Post Jobs </u></h3>
@@ -466,6 +469,9 @@
     
 
     <script>
+        function goPrivacy() {
+            window.location.href = "https://hrtechprivacy.com/brands/glassdoor#privacypolicy";
+        }
          function show()
          {
             var list1=["Accountant Career Path",
@@ -533,13 +539,45 @@
             window.location.href="sign.html"
          }
          
-   if(localStorage.getItem("login_details"==null))
-   {
-         localStorage.setItem("login_details",JSON.stringify([]))
+//    if(localStorage.getItem("login_details"==null))
+//    {
+//          localStorage.setItem("login_details",JSON.stringify([]))
+//    }
+
+   function addUser(m,p) {
+       this.mail = m;
+       this.password = p;
    }
 
+   let users = [];
+   let usernow = JSON.parse(localStorage.getItem("userNow"));
          function signup()
          {
+             let mail = document.getElementById("mail").value;
+             let pass = document.getElementById("password").value;
+
+             let userDetails = JSON.parse(localStorage.getItem("login_details"));
+
+             if (usernow === null) {
+                localStorage.setItem("userNow", JSON.stringify(usernow));
+             }
+
+            if (userDetails === null) {
+                localStorage.setItem("login_details", JSON.stringify(users));
+            }
+
+            if (userDetails.some( good => good['mail'] === mail)) {
+                alert("User already registered!")
+            } else {
+                users.push(new addUser(mail, pass));
+                localStorage.setItem("login_details", JSON.stringify(users));
+                usernow = mail;  
+                alert("Signup Successful!");
+                window.location.href = "../Glassdoor_Website/homeIndex.htm"
+            }
+
+
+             /*
              //getting value and set in string
             var mail=document.querySelector("#mail").value;
             var pass=document.querySelector("#password").value;   
@@ -581,6 +619,7 @@
                 localStorage.setItem("login_details",JSON.stringify(data));
 
               }
+              */
         }
         function usingFacebook()
         {
@@ -590,7 +629,7 @@
         }
         function usingGoogle()
         {
-
+            window.location.href = "https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fwww.glassdoor.co.in%3Fid%3Dauth244977&response_type=code%20permission%20id_token&scope=openid%20profile%20email&openid.realm&client_id=141714232794-u9pltfkeb9skmomag53kf4dt3p4mgp1a.apps.googleusercontent.com&ss_domain=https%3A%2F%2Fwww.glassdoor.co.in&access_type=offline&include_granted_scopes=true&prompt=select_account&origin=https%3A%2F%2Fwww.glassdoor.co.in&gsiwebsdk=2&flowName=GeneralOAuthFlow";
         }
         function postJobs()
         {
