@@ -48,7 +48,7 @@
         name=""
         id="employee"
         placeholder="Employer*"
-        value="Employer"
+        value="Employer Name"
       />
       <p id="employeev" style="visibility: hidden; color: red; font-size: 10px">
         Please correct the Company Name
@@ -75,15 +75,16 @@
 
       <!-- didi you got an offer -->
       <br />
-      <p style="font-size: 12px">Job Title</p>
-      <input type="text" name="" id="jobtitle" />
+      <p style="font-size: 12px">Did you get an offer? *</p>
+      <input type="text" name="" id="offer" />
       <br />
       <!-- interview qustion -->
       <br />
-      <p style="font-size: 12px">Job Title</p>
-      <textarea name="" id="" cols="30" rows="4"></textarea>
+      <p style="font-size: 12px">Interview Questions *</p>
+      <textarea name="" id="interiewQue" cols="30" rows="4"></textarea>
       <br />
-      <button id="continue"><a href="#"></a></button>
+      <button onclick="getdata()" id="continue"><a href="#">Submit</a></button>
+      <br /><br />
     </div>
 
     <script src="./InterviewReview.js"></script>

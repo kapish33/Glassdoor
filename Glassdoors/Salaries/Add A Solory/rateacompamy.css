@@ -43,6 +43,11 @@ button {
   padding: 1% 3%;
   margin: 0%;
 }
+button:hover {
+  color: rgb(58, 216, 52);
+  background-color: #39ff14;
+  box-shadow: 0 0 50px #39ff14;
+}
 #current {
   background-color: #0c4085;
   color: white;
@@ -64,11 +69,11 @@ button {
   }
 }
 /* // on hover */
-#cars {
+.cars {
   margin: 1% 5%;
   padding: 1% 56% 1% 6%;
 }
-#cars * {
+.cars * {
   background-color: #f5f6f7;
 }
 .comonclass {
@@ -81,4 +86,22 @@ button {
   padding: 9px 20px;
   border-radius: 2px;
   border: 0px;
+}
+input {
+  padding: 2%;
+  border: 1px solid grey;
+}
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+textarea {
+  padding: 2%;
+  border: 1px solid grey;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
 }
