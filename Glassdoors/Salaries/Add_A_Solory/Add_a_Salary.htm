@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./AddASalary.css" />
+  </head>
+  <body>
+    <div class="mainhead"><img src="./headderg-png.png" alt="" /></div>
+    <br />
+    <div class="bigger">
+      <div class="left">
+        <h2>Rate a Company</h2>
+        <p>Your anonymous salary will help other job seekers.</p>
+        <label class="small" for="jobLoc">Salory</label><br />
+        <input
+          id="jobLoc"
+          class="inpTxt"
+          type="text"
+          placeholder="Enter a Base Pay"
+          value="10000"
+        />
+        <br />
+        <p id="war" style="visibility: hidden; color: red; font-size: 10px">
+          Please enter a valid salary.
+        </p>
+        <br />
+        <div class="experience">
+          <div id="year" class="box1">Per Year</div>
+          <div id="hour" class="box2">Per Hour</div>
+          <div id="month" class="box3">Per Month</div>
+        </div>
+        <br />
+
+        <!-- Do you get bonuses, tips, or sales commission? -->
+        <p style="font-size: 12px">
+          Do you get bonuses, tips, or sales commission?
+        </p>
+
+        <div id="commision" class="experience">
+          <div id="Yes" class="box1">Yes</div>
+          <div id="No" class="box2">No</div>
+        </div>
+        <br />
+        <!-- Job Details * -->
+        <h2>Job Details *</h2>
+        <label for="jobtitle"><p style="font-size: 12px">Job Title *</p></label>
+        <input
+          type="text"
+          name=""
+          id="jobtitle"
+          placeholder="Job Title*"
+          value="Backend Developer"
+        />
+        <p id="dev" style="visibility: hidden; color: red; font-size: 10px">
+          Please enter your occupation.
+        </p>
+        <br />
+
+        <!-- yeras of location -->
+        <label for="exper"
+          ><p style="font-size: 12px">Years of Experience</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="exper"
+          placeholder="Years of Experience "
+          value="Years of Experience"
+        />
+        <p id="experv" style="visibility: hidden; color: red; font-size: 10px">
+          Years of Experience Can't be Negative
+        </p>
+        <br />
+
+        <!-- loication adding -->
+
+        <label for="locations"
+          ><p style="font-size: 12px">Employment Status *</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="locations"
+          placeholder="Location"
+          value="Location"
+        />
+        <p
+          id="locationvs"
+          style="visibility: hidden; color: red; font-size: 10px"
+        >
+          Please enter your job location.
+        </p>
+        <br />
+
+        <!-- // Employment Status * -->
+
+        <label for="employeest"
+          ><p style="font-size: 12px">Employment Status *</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="employeest"
+          placeholder="Employer Status"
+          value="Full Time / Part Time"
+        />
+        <p
+          id="employeestv"
+          style="visibility: hidden; color: red; font-size: 10px"
+        >
+          Please correct the employer name
+        </p>
+        <br />
+
+        <!-- Employee name -->
+        <label for="employee"
+          ><p style="font-size: 12px">Employer's Name *</p></label
+        >
+        <input
+          type="text"
+          name=""
+          id="employee"
+          placeholder="Employer*"
+          value="Employer"
+        />
+        <p
+          id="employeev"
+          style="visibility: hidden; color: red; font-size: 10px"
+        >
+          Please correct the employer name
+        </p>
+        <br />
+
+        <!-- former employee -->
+        <p style="font-size: 12px">Are you a current or former employee? *</p>
+
+        <div id="former" class="experience">
+          <div id="Current" class="box1">Current</div>
+          <div id="Former" class="box2">Former</div>
+        </div>
+        <br />
+        <!-- gender -->
+
+        <p style="font-size: 12px">
+          Specify your gender to contribute anonymously to Glassdoor research on
+          fair wages. (Optional)
+        </p>
+
+        <div id="gender" class="experience">
+          <div id="Female" class="box1">Female</div>
+          <div id="Male" class="box2">Male</div>
+          <div id="Trans Gender" class="box2">Trans Gender</div>
+        </div>
+        <br />
+
+        <input
+          onclick="submitSalory()"
+          id="submi"
+          type="submit"
+          value="Submit Salary "
+        />
+      </div>
+      <!-- 1st -->
+
+      <!-- lower case non js -->
+      <div class="right">
+        <h1>How can this really be anonymous?</h1>
+        <p>
+          We will never display any personal information with your salary. The
+          only personal information we require is your email (i.e., no name, no
+          address, etc.) and we only do that to make sure you're a real person.
+        </p>
+        <p>Plus, there's more to protect your anonymity:</p>
+        <div class="box">
+          <ul>
+            <li>
+              If you are among the first to post a salary for your job title and
+              company, we will automatically add and/or subtract a small amount
+              from the salary you post. This "anonymous salary range" offers a
+              bit more anonymity, while minimising the difference from the
+              actual salary.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="./AddASalory.js"></script>
+  </body>
+</html>

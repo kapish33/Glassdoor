@@ -33,7 +33,7 @@
         <div class="wrap">
           <div>Last Year at Employer *</div>
           <div>
-            <select name="cars" id="cars">
+            <select name="cars" class="cars" id="cars">
               <option value="2021">2021</option>
               <option value="2020">2020</option>
               <option value="2019">2019</option>
@@ -45,8 +45,8 @@
         <div class="wrap2">
           <p style="font-size: 12px">Employment Status *</p>
           <div>
-            <select name="cars" id="cars">
-              <option value="optins">Select your option</option>
+            <select name="cars" class="cars" id="cars2">
+              <!-- <option value="optins">Select your option</option> -->
               <option value="Full Time">Full Time</option>
               <option value="Part Time">Part Time</option>
               <option value="Temporary">Temporary</option>
@@ -57,7 +57,7 @@
         </div>
         <br />
         <label for="title"
-          ><p style="font-size: 12px">Your Job Title at Flipkart</p></label
+          ><p style="font-size: 12px">Your Job Title at Your Company</p></label
         >
         <input class="comonclass" type="text" name="" id="title" />
         <br /><br />
@@ -79,12 +79,12 @@
         <textarea name="" id="management" cols="50" rows="5"></textarea>
         <br /><br />
         <p style="font-size: 14px">
-          <input type="checkbox" name="" id="" title="" />
+          <input type="checkbox" name="" id="ifcheck" title="" checked="true" />
           I agree to the Glassdoor Terms of Use. This review of my experience at
           my current or former employer is truthful.
         </p>
         <div style="float: right">
-          <button id="see">Submit Review</button>
+          <button onclick="ratecompany()" id="see">Submit Review</button>
         </div>
       </div>
       <div class="right">

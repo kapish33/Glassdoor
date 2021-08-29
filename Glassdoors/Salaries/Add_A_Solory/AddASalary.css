@@ -1,0 +1,100 @@
+* {
+  background-color: #eaeaea;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+}
+.mainhead {
+  background-color: white;
+}
+.mainhead img {
+  height: 35px;
+  margin: 0.21%;
+}
+.bigger {
+  display: grid;
+  grid-template-columns: 1.9fr 0.9fr;
+  gap: 1.5%;
+  margin: auto;
+  width: 80%;
+}
+.right {
+  background-color: rgb(255, 255, 255);
+  padding: 6%;
+  line-height: 1.5;
+  height: 600px;
+}
+.right * {
+  background-color: white;
+}
+.left {
+  background-color: white;
+  padding: 5%;
+  line-height: 1.5;
+}
+.left * {
+  background-color: white;
+}
+
+.box {
+  padding: 0% 10%;
+}
+.rupees:empty {
+  background-color: red;
+}
+/* adding css for input  boxes */
+input {
+  width: 100%;
+  padding: 1% 0% 0% 2%;
+  border: 1px solid black;
+}
+input:hover {
+  box-shadow: 0 3px 10px #0c4085;
+  /* border: 1px solid #0c4085; */
+}
+input {
+  padding: 2%;
+  border: 1px solid grey;
+}
+input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+/* adding exoperience */
+.experience {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #0c4085;
+}
+.experience * {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #0c4085;
+  padding: 1%;
+}
+.experience :hover {
+  background-color: #0c4085;
+  color: white;
+}
+/* // adding Do you get bonuses, tips, or sales commission? */
+#submi {
+  float: right;
+  background-color: #0c4085;
+  color: white;
+  font-size: 22px;
+  width: 25%;
+}
+#submi:hover {
+  color: rgb(230, 231, 229);
+  background-color: #39ff14;
+  box-shadow: 0 0 50px #39ff14;
+}
+@media only screen and (max-width: 900px) {
+  .bigger {
+    display: flex;
+    flex-direction: column;
+  }
+}
