@@ -95,40 +95,35 @@
     <div class="details">
         <div ><input  id="mail" type="email" placeholder="Enter Email"></div>
         <div ><input id="pass" type="password" placeholder="Enter Password"></div>
-        <div><button>Submit</button></div>
+        <div><button onclick="submit()">Submit</button></div>
     
     </div>
     </div>
 
      <script>  
-          function submit()
-          {
-            var mail=document.getElementById("mail").value
-            var pass=document.getElementById("pass").value
-            // mail=JSON.stringify(mail)
-             //pass=JSON.stringify(pass)
 
-             var cnt=0;
-            let data=JSON.parse(localStorage.getItem("login_details"));
-            data.forEach(element =>cnt++);
-           // console.log(mail+" "+pass+" "+data[0].mail)
-            let b=false;
-           
-            for(var i=0;i<cnt;i++)
-            {
-                    if( mail==data[i].mail && pass==data[i].pass)
-                     {
-                        window.location.href="demo.html"
-                         //console.log("shubham")
-                         b=true;
-                        break;
-                    }
-            }
-                 if(b==false)
-                 {
-                     alert("Invalid credentials")
-                 }
-          }
+
+let text = JSON.parse(localStorage.getItem("login_details")); //converting JSON into Array
+
+function submit() 
+{
+  var username=document.getElementById("mail").value
+  var password=document.getElementById("pass").value
+  var attempt = false;
+  for (var i = 0; i < text.length; i++) 
+  {
+    if (text[i].mail == username && text[i].pass == password) {
+      attempt = true;
+      alert("Login Sucessfull")
+      window.location = "";
+      break;
+    }
+  }
+  if (attempt === false) {
+    alert("Invalid cediantials!");
+  }
+}
+
      </script> 
 
 </body>
