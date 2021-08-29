@@ -81,6 +81,7 @@ this.password = p;
 let users = [];
  function signup()
  {
+     event.preventDefault();
      let mail = document.getElementById("mail").value;
      let pass = document.getElementById("password").value;
 
