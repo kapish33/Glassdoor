@@ -164,3 +164,8 @@ login = JSON.parse(localStorage.getItem("userNow"));
  }
 
  window.onload = loadActivity();
+
+ function moveToDashboard()
+ {
+     window.location="Glassdoor/demo.html"
+ }

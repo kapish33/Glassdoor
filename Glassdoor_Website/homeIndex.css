@@ -563,3 +563,37 @@ a {
            background-color: rgb(207, 202, 202);
            border-radius: 6px;
         }
+   
+        .signout
+        {
+            display: flex;
+            flex-flow: column;
+            font-size: 20px;
+            padding: 0.5%;
+            border: gray 1px solid;
+            width: 12%;
+            border-radius: 4px;
+            position: absolute;
+            display: none;  
+          
+        }
+        .signout  div
+        {
+            margin-top: 10px;
+            font-size: 20px;
+            color: rgb(94, 93, 93);
+            cursor: pointer;
+        }
+       
+        #a7:hover  .signout
+        {
+         display: block; 
+         background-color: white;
+
+         }
+
+         .signout div:hover
+         {
+             background-color: rgb(190, 190, 190);
+             border-radius: 5px;
+         }
