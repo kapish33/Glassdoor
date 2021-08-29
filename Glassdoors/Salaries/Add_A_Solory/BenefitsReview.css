@@ -3,7 +3,6 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
 }
 .mainhead {
   background-color: white;
@@ -54,8 +53,8 @@ button:hover {
   color: white;
 }
 /* .wrap {
-  display: none;
-} */
+    display: none;
+  } */
 .wrap div {
   background-color: #f5f6f7;
   padding: 0px 2%;
@@ -67,12 +66,12 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     gap: 12px;
+    font-family: "Open Sans", sans-serif;
   }
 }
 /* // on hover */
 .cars {
-  margin: 1% 5%;
-  padding: 1% 56% 1% 6%;
+  padding: 1% 23% 1% 6%;
 }
 .cars * {
   background-color: #f5f6f7;
@@ -89,6 +88,7 @@ button:hover {
   border: 0px;
 }
 input {
+  width: 100%;
   padding: 2%;
   border: 1px solid grey;
 }
@@ -105,4 +105,17 @@ textarea:focus {
   outline: none !important;
   border-color: #719ece;
   box-shadow: 0 0 10px #719ece;
+}
+/* star css */
+.stars {
+  display: flex;
+}
+/* making of choices */
+.select {
+  display: flex;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.select div {
+  margin: auto;
 }

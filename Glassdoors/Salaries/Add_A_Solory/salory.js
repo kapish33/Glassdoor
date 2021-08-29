@@ -2,10 +2,11 @@
 btn = document.getElementsByClassName("sel");
 
 // console.log(btn, "btn");
-
+var even = "Company Review";
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener("click", function (e) {
-    console.log(e.target.value);
+    // console.log(e.target.value);
+    even = e.target.value;
     //if (e.target.value === "Salary") {
     // console.log(0);
     document.querySelector("#lowerleftup").textContent =
@@ -36,4 +37,17 @@ function former() {
   var current = document.getElementById("current");
   current.style.backgroundColor = "white";
   current.style.color = "black";
+}
+
+function redirect() {
+  // console.log(even);
+  if (even === "Company Review") {
+    window.location.href = "./rateacompany.htm";
+  } else if (even === "Salary") {
+    window.location.href = "./Add_a_Salary.htm";
+  } else if (even === "Interview Review") {
+    window.location.href = "./InterviewReview.htm";
+  } else if (even === "Benefits Review") {
+    window.location.href = "./BenefitsReview.html";
+  }
 }
