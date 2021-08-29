@@ -112,11 +112,9 @@ locBox.oninput = function(e) {
         d.style.backgroundColor = "white";
         document.getElementById("xplor").style.visibility = "visible";
         document.getElementById("location").style.visibility = "visible";
+        addJobs();
     });
-
-    addJobs();
-
-
+    
  }
 
  function appendToFrontend(index, r, c, l, d, i) {
