@@ -1,0 +1,281 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    text-align: center;            
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+input, button {
+    border: none;
+}
+ .top
+ {
+     display: grid;
+     grid-template-columns: repeat(11,1fr);
+     margin: 0.4%;
+     
+ } 
+ .top>:first-child
+ {
+    color: #0CAA41;
+    grid-column-start: 2;
+ }
+
+ #top1
+ {
+    grid-column-start: 9;
+ }
+ #top2
+ {
+    grid-column-start: 10;
+    cursor: pointer;
+ }
+ #top3
+ {
+     grid-column-start: 11;
+ }
+
+ .top p:hover
+ {
+    background-color: rgb(212, 218, 218);
+    cursor: pointer;
+ }
+
+ .top p
+ {
+    padding-top: 11%;
+ }
+ .top img
+ {
+    padding-top: 4%;
+    padding-right: 8%;
+ }
+ .top h1:hover
+ {
+    cursor: pointer;
+ }
+ 
+
+ p
+ {
+     width: 80%;
+     margin: auto;
+     color: rgb(102, 100, 100);
+     margin-bottom: 2%;
+     font-weight: 600;
+ }
+
+ .GlassdoorWorks
+ {
+     display: flex;
+     width: 80%;
+     margin: auto;
+     gap: 3%;
+     flex-wrap: wrap;
+}
+
+ .GlassdoorWorksp2
+ {
+    display: flex;
+     width: 80%;
+     margin: auto;  
+ }
+
+ .GlassdoorWorks .box
+ {
+    margin: auto;
+ }
+ 
+ .GlassdoorWorks img
+ {
+    margin: auto;
+    max-width: 70px;
+ }
+
+ .explore
+ {
+     border-bottom: darkgray 1px solid;
+ }
+
+ .data
+ {
+     width: 30%;
+     margin: auto;
+ }
+
+ .display ul
+ {
+     color: gray;
+     font-size: 15px;
+     text-align: left;
+     width: 30%;
+ }
+
+#login_info
+{
+   height: 600px;
+   background-image: url("img.jpg"); 
+   background-size:     cover;                      
+   background-repeat:   no-repeat;
+   background-size: 100%;
+   position: relative;
+   width: 100%;
+
+}
+
+#login_info::before 
+{
+ content: "";
+ background-image: url("img.jpg");
+ position: absolute;
+ background-size:cover;                
+ top: 0; bottom: 0; left: 0; right: 0; 
+ background: rgba(0, 0, 0, 0.60);
+ }
+
+#login_info div
+{
+    color: white;
+    padding-top: 1%;
+    position: relative;
+    margin: 0;
+}
+#login_info input
+{
+  width: 30%;
+  height: 40px;  
+  font-size: 18px;
+  font-weight: 500;
+}
+#login_info button
+{
+    width: 30%; 
+    color: white; 
+   border-radius: 4px; 
+   height: 45px; 
+   font-size: 20px;
+   cursor: pointer;
+}
+
+.login_info_in input
+{
+      border-radius: 5px;
+   
+}
+
+#terms,#post_jobs:hover
+{
+      cursor: pointer;
+}
+.covid
+{
+    background-color: #FBE9E7;
+    display: flex;
+    gap: 20px;
+    height: 26px;
+    font-size: 20px;
+    border-bottom: lightgray 2px solid;
+    border-top: lightgray 2px solid;
+    padding-bottom: 1%;
+    padding-top: 1%;
+
+}
+.covid:hover
+{
+    cursor: pointer;
+}
+
+.covid>:nth-child(1)
+{
+    flex-grow: 1;
+    text-align: right;
+}
+.covid>:nth-child(2)
+{
+    font-weight: 500;
+}
+.covid>:nth-child(3)
+{
+    flex-grow: 1;
+    text-align: left;
+}
+.covid>:nth-child(1),:nth-child(3)
+{
+    flex-grow: 1;
+}
+.facebookButton:hover
+{
+    background-color:#062347 ;
+}
+
+
+.first_child
+{
+width: 350%;
+border: gray solid 1px;
+display: grid;
+position: relative;
+background-size:cover;                
+grid-template-columns: repeat(3, minmax(110px, auto));
+display: none;   
+} 
+.topButton
+{
+border: #1861BF 1px solid;
+font-size: 18px;
+font-weight: 500;
+height: 40px;
+color: #1861BF;
+background-color: white;
+border-radius: 5px;
+}
+.topButton:hover
+{
+background-color: #1861BF;
+cursor: pointer;
+color: white;
+}
+.topUsingFlex
+{
+display: flex;
+flex-direction: column;
+}
+.topUsingFlex div
+{
+padding: 1%;
+}
+.topimage
+{
+width: 100%;
+}
+.p1:hover + .first_child 
+{
+display: block; 
+}
+.p2:hover + .first_child 
+{
+display: block; 
+}
+.p3:hover + .first_child 
+{
+display: block; 
+}
+.p4:hover + .first_child 
+{
+display: block; 
+}
+.left {
+text-align: left;
+}
+.left:focus {
+outline: 2px solid skyblue;
+}
+#continueEmail {
+padding: 8px;
+width: 70% !important;
+}
+.fitt {
+width: max-content;
+}
