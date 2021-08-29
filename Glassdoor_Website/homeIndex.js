@@ -138,12 +138,12 @@ locBox.oninput = function(e) {
  }
 
 function addJobs() {
-    let locationValue = document.getElementById("ta4").value;
+    let locationValue = document.getElementById("ta4");
     let count = 1;
     for (let i = 0; i < roles.length && count <= 4; i++) {
         const element = roles[i];
-        if (element.location === locationValue) {
-            appendToFrontend(count++, element.role, element.company, element. location, element.days, element.image)
+        if (element.location === locationValue.value) {
+            appendToFrontend(count++, element.role, element.company, element.location, element.days, element.image)
         }
     }
 }
@@ -154,11 +154,15 @@ finButton.addEventListener('click', function() {
     window.location = "../../../Finish.html";
 })
 
- window.onload = doIt;
 
 login = JSON.parse(localStorage.getItem("userNow"));
 
  function loadActivity() {
+    let locationValue = document.getElementById("ta4");
      let usr = document.getElementById("useremail");
-     usr.innerText = login;
+     usr.innerText = login.email;
+     locationValue.innerText = login.loc;
+     doIt();   
  }
+
+ window.onload = loadActivity();

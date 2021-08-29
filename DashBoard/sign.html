@@ -95,7 +95,7 @@
     <div class="details">
         <div ><input  id="mail" type="email" placeholder="Enter Email"></div>
         <div ><input id="pass" type="password" placeholder="Enter Password"></div>
-        <div><button>Submit</button></div>
+        <div><button onclick="submit()">Submit</button></div>
     
     </div>
     </div>
@@ -105,29 +105,23 @@
           {
             var mail=document.getElementById("mail").value
             var pass=document.getElementById("pass").value
-            // mail=JSON.stringify(mail)
-             //pass=JSON.stringify(pass)
 
-             var cnt=0;
-            let data=JSON.parse(localStorage.getItem("login_details"));
-            data.forEach(element =>cnt++);
-           // console.log(mail+" "+pass+" "+data[0].mail)
-            let b=false;
-           
-            for(var i=0;i<cnt;i++)
-            {
-                    if( mail==data[i].mail && pass==data[i].pass)
-                     {
-                        window.location.href="demo.html"
-                         //console.log("shubham")
-                         b=true;
-                        break;
-                    }
+             let userDetails = JSON.parse(localStorage.getItem("login_details"));
+
+             let usernow = {
+                 email: mail,
+                 loc: "Kolkata"
+             }
+
+             
+             if (userDetails.some( good => good['mail'] === mail && good['password'] === pass)) {
+                alert("Login Successful!")
+                localStorage.setItem("userNow", JSON.stringify(usernow));
+                window.location.href = "../Glassdoor_Website/homeIndex.htm"
+            } else {
+                alert("Invalid Login Credentials!");
             }
-                 if(b==false)
-                 {
-                     alert("Invalid credentials")
-                 }
+
           }
      </script> 
 

@@ -277,6 +277,12 @@
     {
        display: block; 
     }
+    .left {
+        text-align: left;
+    }
+    .left:focus {
+        outline: 2px solid skyblue;
+    }
 
     </style>
 </head>
@@ -360,8 +366,8 @@
 <div class="b" ><button class="facebookButton" style="background-color: #0275d8;"  onclick="usingFacebook()"> Continue with Facebook</button></div>
 <div class="c" ><button id="googleButton"  style="color: #d86902;" onclick="usingGoogle()">Continue with Google</button></div>
 <div> <hr style="width: 30%;"></div>
-<div> <input id="mail" class="" type="email" placeholder="Create account with Email"></div>
-<div><input id="password" type="password" placeholder="Password"></div>
+<div> <input id="mail" class="left" type="email" placeholder="Create account with Email"></div>
+<div><input id="password" type="password" class="left" placeholder="Password"></div>
 <div style="width: 30%; margin: auto;"><input onclick="signup()" style="background-color:#0275d8; color: white; " type="submit" placeholder="submit"/></div>
 <h3>Are You Hiring?<u id="post_jobs" onclick="post_jobs()"> Post Jobs </u></h3>
 </div>
@@ -550,7 +556,6 @@
    }
 
    let users = [];
-   let usernow = JSON.parse(localStorage.getItem("userNow"));
          function signup()
          {
              let mail = document.getElementById("mail").value;
@@ -558,9 +563,12 @@
 
              let userDetails = JSON.parse(localStorage.getItem("login_details"));
 
-             if (usernow === null) {
-                localStorage.setItem("userNow", JSON.stringify(usernow));
+             let usernow = {
+                 email: mail,
+                 loc: "Kolkata"
              }
+
+            localStorage.setItem("userNow", JSON.stringify(usernow));
 
             if (userDetails === null) {
                 localStorage.setItem("login_details", JSON.stringify(users));
