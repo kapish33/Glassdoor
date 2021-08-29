@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 #top > p > a {
     
@@ -513,3 +514,50 @@ a {
 .aas {
     height: fit-content;
 }
+
+  .Dropdown1
+        {
+            display: flex;
+            flex-flow: column;
+            font-size: 20px;
+            margin: 1%;
+            border: gray 1px solid;
+            width: 15%;
+            border-radius: 4px;
+            position: absolute;
+            display: none;        
+        }
+        
+
+      
+        #t31:hover  .Dropdown1
+       {
+        display: block; 
+        background-color: white;
+          
+        }
+        #t32:hover .Dropdown1
+       {
+          display: block; 
+          background-color: white;
+        }
+        #t33:hover .Dropdown1
+       {
+          display: block; 
+          background-color: white;
+        }
+        #t34:hover  .Dropdown1
+       {
+          display: block; 
+          background-color: white;
+        }
+         .Dropdown1 div
+        {
+           margin: 4%;
+        }
+
+        .Dropdown1 div:hover
+        {
+           background-color: rgb(207, 202, 202);
+           border-radius: 6px;
+        }
