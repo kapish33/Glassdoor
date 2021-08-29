@@ -525,7 +525,9 @@ a {
             width: 15%;
             border-radius: 4px;
             position: absolute;
-            display: none;        
+            display: none;  
+            margin-top: 3%;
+            margin-left: 0;      
         }
         
 
