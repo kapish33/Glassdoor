@@ -526,13 +526,11 @@ a {
             border-radius: 4px;
             position: absolute;
             display: none;  
-            margin-top: 3%;
+            margin-top: 5%;
             margin-left: 0;      
         }
-        
-
-      
-        #t31:hover  .Dropdown1
+           
+        #t31:hover .Dropdown1
        {
         display: block; 
         background-color: white;
@@ -585,7 +583,7 @@ a {
             cursor: pointer;
         }
        
-        #a7:hover  .signout
+        #a7:hover .signout
         {
          display: block; 
          background-color: white;
