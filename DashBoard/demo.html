@@ -13,7 +13,10 @@
         {
             font-family: 'Open Sans', sans-serif;
             font-weight: bolder;
-            text-align: center;             
+            text-align: center;      
+            padding :0% ;
+            margin: 0%;      
+
         }
 
          .top
@@ -356,7 +359,7 @@
 <p style="color: white; font-size: 13px; margin-bottom: 0;">By continuing, you agree to our <u id="terms" onclick="terms()"> Terms of Use and Privacy Policy</u></p>
 <div class="b" ><button class="facebookButton" style="background-color: #0275d8;"  onclick="usingFacebook()"> Continue with Facebook</button></div>
 <div class="c" ><button id="googleButton"  style="color: #d86902;" onclick="usingGoogle()">Continue with Google</button></div>
-<div> <hr style="width: 30%;"></div>
+<div> <hr style="width: 30%; margin: auto;"></div>
 <div> <input id="mail" type="email" placeholder="Create account with Email"></div>
 <div><input id="password" type="password" placeholder="Password"></div>
 <div style="width: 30%; margin: auto;"><input onclick="signup()" style="background-color:#0275d8; color: white; " type="submit" placeholder="submit"/></div>
@@ -466,57 +469,7 @@
     
 
     <script>
-         function show()
-         {
-            var list1=["Accountant Career Path",
-                       "Neurologist Career Path",
-                       "Executive Producer Career Path",
-                       "Actuary Career Path",
-                       "Copywriter Career Path"
-                     ];
-
-                     var list2=[" Career Path",
-                       "Neurologist Career Path",
-                       "Executive Producer Career Path",
-                       "Actuary Career Path",
-                       "Copywriter Career Path"
-                     ];
-                     var list3=["  Path",
-                       "Neurologist Career Path",
-                       "Executive Producer Career Path",
-                       "Actuary Career Path",
-                       "Copywriter Career Path"
-                     ];
-                 
-                    var point=document.getElementById("point")
-                    var display=document.createElement("div")
-                    display.className="display"
-                    point.appendChild(display);
-                    var ul =document.createElement("ul")
-                    ul.className="list1";
-                    var ul1 =document.createElement("ul")
-                    ul1.className="list2";
-                    var ul2 =document.createElement("ul")
-                    ul2.className="list3";
-
-                  
-                     
-                     for(var i=0;i<5;i++)
-                     {
-                        var ull1 =document.createElement("li")
-                        ul.appendChild(ull1)
-                        ull1.innerText=list1[i];
-                     }
-                     display.appendChild(ul)
-                     for(var i=0;i<5;i++)
-                     {
-                         var ull2 =document.createElement("li")
-                        ul.appendChild(ull2)
-                        ull2.innerText=list2[i]; 
-                     }
-                     display.appendChild(ul1)
-
-         }
+       
 
          function terms()
          {
@@ -537,51 +490,31 @@
    {
          localStorage.setItem("login_details",JSON.stringify([]))
    }
-
+       
+         const myArray = [];
          function signup()
-         {
-             //getting value and set in string
-            var mail=document.querySelector("#mail").value;
-            var pass=document.querySelector("#password").value;   
-            var tobeadd={"mail":mail,"pass":pass};
-            tobeadd=JSON.stringify(tobeadd)
-          
-         
-             let data=JSON.parse(localStorage.getItem("login_details"));
-             //adding data
-         
-            // console.log(tobeadd)
-             //updating localstorage
-             localStorage.setItem("login_details",JSON.stringify(data));
-           //  console.log(data)
+         { 
+            var mail = document.getElementById("mail").value;
+            var pass = document.getElementById("password").value;      
+        if (mail === "" || pass === "" )
+       {
+         alert("Please fill all fields!");
+        } else 
+        {
+       const item = 
+       {
+       mail: mail,
+       pass: pass,
+       };
+       myArray.push(item); //pushing element in the array
+       var Array = JSON.stringify(myArray); //converting array into jSON
+       localStorage.setItem("login_details", Array);
+       alert("Login Successfull")
+       window.location = "sign.html";
+      }
+       let text = JSON.parse(localStorage.getItem("persons")); //converting JSON into Array
+    }
 
-           var cnt=0;
-           if(data!=null )
-               {
-                data.forEach(element =>cnt++);
-                let b=false;
-                 for(var i=0;i<cnt;i++)
-                  {
-                    if( mail==data[i].mail)
-                     {
-                         b=true;
-                       alert("Email already exist login");
-                       break;
-                     }
-                 }
-                  if(b==false)
-                  {
-                    data.push(tobeadd);
-                  }
-               localStorage.setItem("login_details",JSON.stringify(data));
-              }
-              else
-              {
-                data.push(tobeadd);
-                localStorage.setItem("login_details",JSON.stringify(data));
-
-              }
-        }
         function usingFacebook()
         {
              setTimeout(() => {
