@@ -165,7 +165,7 @@ login = JSON.parse(localStorage.getItem("userNow"));
 
  window.onload = loadActivity();
 
- function moveToDashboard()
- {
-     window.location="Glassdoor/demo.html"
- }
+ function moveToDashboard() {
+    localStorage.setItem("userNow", JSON.stringify(null));
+    window.location = "../Dashboard/demo.html"
+}

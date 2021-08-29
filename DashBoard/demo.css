@@ -279,3 +279,10 @@ width: 70% !important;
 .fitt {
 width: max-content;
 }
+#fl {
+    display: flex;
+}
+#fl > div > img {
+    height: 100%;
+    width: 30px;
+}
