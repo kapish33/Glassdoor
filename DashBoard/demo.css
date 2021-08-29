@@ -267,17 +267,18 @@ display: block;
 display: block; 
 }
 .left {
-text-align: left;
+    text-align: left;
+    padding: 10px;
 }
 .left:focus {
-outline: 2px solid skyblue;
+    outline: 2px solid skyblue;
 }
 #continueEmail {
-padding: 8px;
-width: 70% !important;
+    padding: 8px;
+    width: 70% !important;
 }
 .fitt {
-width: max-content;
+    width: max-content;
 }
 #fl {
     display: flex;

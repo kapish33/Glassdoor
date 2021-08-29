@@ -100,6 +100,9 @@ let users = [];
     if(mail === '' || pass === '') {
         alert('Enter a valid email and password!')
     }
+    else if(pass.length < 8) {
+        alert('Password should be atleast 8 characters.');
+    }
     else if (userDetails.some( good => good['mail'] === mail)) {
         alert("User already registered!")
     } else {
@@ -168,4 +171,10 @@ function usingGoogle()
 function postJobs()
 {
   window.location.href="https://www.glassdoor.co.in/post-job/?src=site-header-locked-b2c";
+}
+
+function check() {
+    let subb = document.getElementById("continueEmail");
+    subb.style.cursor = "pointer";
+    subb.setAttribute('disabled', false);
 }
