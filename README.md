@@ -1,6 +1,6 @@
 ## _The Clone Of GlassDoor_
 
-[![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://www.masaischool.com)
+
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://kapishsingh.medium.com/clone-of-glassdoor-29bd92d20c05)
 To Run This File You Need Only!
