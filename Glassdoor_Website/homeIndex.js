@@ -1,13 +1,13 @@
 var tex = document.getElementById('searc');
 
 tex.onfocus = () => {
-    var d = document.getElementById('a2');
+    var d = document.getElementById('searchcomponent2');
     d.setAttribute("style", `border: 1px solid lightgray;
     box-shadow: 1px 1px 5px 1px lightblue;`);
 }
 
 tex.onblur = () => {
-    var d = document.getElementById('a2');
+    var d = document.getElementById('searchcomponent2');
     d.setAttribute("style", `border: 1px solid lightgray;
     box-shadow: 0px 0px 0px 0px;`);
 }
@@ -23,7 +23,7 @@ tex1.onblur = () => {
     box-shadow: 0px 0px 0px 0px;`);
 }
 
-var salaryButton = document.getElementById("t33");
+var salaryButton = document.getElementById("explore3");
 
 salaryButton.addEventListener("click", () => {
     window.location = '../Glassdoors/Salaries/Salaries.htm';
