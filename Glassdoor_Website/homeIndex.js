@@ -65,10 +65,10 @@ locBox.oninput = function(e) {
 
  function doIt() {
     var count = 0;
-    let a = document.getElementById("r1");
-    let c = document.getElementById("r3");
-    let d = document.getElementById("r4");
-    let b = document.getElementById("r2");
+    let a = document.getElementById("job1");
+    let c = document.getElementById("job3");
+    let d = document.getElementById("job4");
+    let b = document.getElementById("job2");
     let proms = new Promise(function(resolve, reject){
         var cc = setInterval(() => {
             count++;
