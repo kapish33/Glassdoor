@@ -12,15 +12,14 @@ tex.onblur = () => {
     box-shadow: 0px 0px 0px 0px;`);
 }
 var tex1 = document.getElementById('ta4');
+var locateDiv = document.getElementById('searchcomponent4');
 
 tex1.onfocus = () => {
-    tex1.setAttribute("style", `border: 1px solid lightgray;
-    box-shadow: 1px 1px 5px 1px lightblue;`);
+    locateDiv.setAttribute("style", `border: 1px solid lightgray;box-shadow: 1px 1px 5px 1px lightblue;`);
 }
 
 tex1.onblur = () => {
-    tex1.setAttribute("style", `border: 1px solid lightgray;
-    box-shadow: 0px 0px 0px 0px;`);
+    locateDiv.setAttribute("style", `border: 1px solid lightgray;box-shadow: 0px 0px 0px 0px;`);
 }
 
 var salaryButton = document.getElementById("explore3");
