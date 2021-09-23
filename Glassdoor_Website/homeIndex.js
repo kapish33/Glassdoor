@@ -1,29 +1,28 @@
 var tex = document.getElementById('searc');
 
 tex.onfocus = () => {
-    var d = document.getElementById('a2');
+    var d = document.getElementById('searchcomponent2');
     d.setAttribute("style", `border: 1px solid lightgray;
     box-shadow: 1px 1px 5px 1px lightblue;`);
 }
 
 tex.onblur = () => {
-    var d = document.getElementById('a2');
+    var d = document.getElementById('searchcomponent2');
     d.setAttribute("style", `border: 1px solid lightgray;
     box-shadow: 0px 0px 0px 0px;`);
 }
 var tex1 = document.getElementById('ta4');
+var locateDiv = document.getElementById('searchcomponent4');
 
 tex1.onfocus = () => {
-    tex1.setAttribute("style", `border: 1px solid lightgray;
-    box-shadow: 1px 1px 5px 1px lightblue;`);
+    locateDiv.setAttribute("style", `border: 1px solid lightgray;box-shadow: 1px 1px 5px 1px lightblue;`);
 }
 
 tex1.onblur = () => {
-    tex1.setAttribute("style", `border: 1px solid lightgray;
-    box-shadow: 0px 0px 0px 0px;`);
+    locateDiv.setAttribute("style", `border: 1px solid lightgray;box-shadow: 0px 0px 0px 0px;`);
 }
 
-var salaryButton = document.getElementById("t33");
+var salaryButton = document.getElementById("explore3");
 
 salaryButton.addEventListener("click", () => {
     window.location = '../Glassdoors/Salaries/Salaries.htm';
@@ -65,10 +64,10 @@ locBox.oninput = function(e) {
 
  function doIt() {
     var count = 0;
-    let a = document.getElementById("r1");
-    let c = document.getElementById("r3");
-    let d = document.getElementById("r4");
-    let b = document.getElementById("r2");
+    let a = document.getElementById("job1");
+    let c = document.getElementById("job3");
+    let d = document.getElementById("job4");
+    let b = document.getElementById("job2");
     let proms = new Promise(function(resolve, reject){
         var cc = setInterval(() => {
             count++;
@@ -164,8 +163,3 @@ login = JSON.parse(localStorage.getItem("userNow"));
  }
 
  window.onload = loadActivity();
-
- function moveToDashboard() {
-    localStorage.setItem("userNow", JSON.stringify(null));
-    window.location = "../Dashboard/demo.html"
-}
