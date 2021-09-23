@@ -65,7 +65,7 @@ function goPrivacy() {
 
  function sign()
  {
-    window.location.href="sign.html"
+    window.location.href="./Resources/sign.html"
  }
  
 //    if(localStorage.getItem("login_details"==null))
@@ -94,7 +94,8 @@ let users = [];
 
     localStorage.setItem("userNow", JSON.stringify(usernow));
 
-    if (userDetails === null) {
+    if (userDetails === null) 
+    {
         localStorage.setItem("login_details", JSON.stringify(users));
     }
 

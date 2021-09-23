@@ -10,18 +10,6 @@ body {
 input, button {
     border: none;
 }
- .top
- {
-     display: grid;
-     grid-template-columns: repeat(11,1fr);
-     margin: 0.4%;
-     
- } 
- .top>:first-child
- {
-    color: #0CAA41;
-    grid-column-start: 2;
- }
 
  #top1
  {
@@ -37,22 +25,22 @@ input, button {
      grid-column-start: 11;
  }
 
- .top p:hover
+ .navbar p:hover
  {
     background-color: rgb(212, 218, 218);
     cursor: pointer;
  }
 
- .top p
+ .navbar p
  {
-    padding-top: 11%;
+    margin-top: 15px;
  }
- .top img
+ .navbar img
  {
     padding-top: 4%;
     padding-right: 8%;
  }
- .top h1:hover
+ .navbar h1:hover
  {
     cursor: pointer;
  }
@@ -113,26 +101,65 @@ input, button {
      width: 30%;
  }
 
+ .top_jobs:hover  .navbar_first_child
+{
+  display: block; 
+}
+
+
+
+
+.navbar 
+{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    margin: 0.4%;
+} 
+
+.navbar ::before
+{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    margin: 0.4%;
+    position: absolute;
+
+} 
+.navbar>:first-child
+{
+   color: #0CAA41;
+   grid-column-start: 2;
+}
+
+
+.navbar_first_child
+{
+width:300px;
+border: gray solid 1px;
+display: grid;
+grid-template-columns: repeat(3, minmax(110px, auto));
+background-color: white;
+position: relative;
+display:none;
+} 
+
 #login_info
 {
    height: 600px;
-   background-image: url("img.jpg"); 
-   background-size:     cover;                      
+   background-image: url("/Resources/img.jpg"); 
    background-repeat:   no-repeat;
    background-size: 100%;
    position: relative;
    width: 100%;
-
 }
 
 #login_info::before 
 {
  content: "";
- background-image: url("img.jpg");
- position: absolute;
- background-size:cover;                
+ background-image: url("/Resources/img.jpg");
  top: 0; bottom: 0; left: 0; right: 0; 
  background: rgba(0, 0, 0, 0.60);
+ position: absolute;
+
  }
 
 #login_info div
@@ -152,7 +179,6 @@ input, button {
 #login_info button
 {
     width: 30%; 
-    color: white; 
    border-radius: 4px; 
    height: 45px; 
    font-size: 20px;
@@ -211,16 +237,7 @@ input, button {
 }
 
 
-.first_child
-{
-width: 350%;
-border: gray solid 1px;
-display: grid;
-position: relative;
-background-size:cover;                
-grid-template-columns: repeat(3, minmax(110px, auto));
-display: none;   
-} 
+
 .topButton
 {
 border: #1861BF 1px solid;
@@ -250,40 +267,106 @@ padding: 1%;
 {
 width: 100%;
 }
-.p1:hover + .first_child 
+
+
+
+
+.top_companies:hover  .navbar_first_child 
+{
+display: block; 
+
+}
+.top_salaries:hover  .navbar_first_child 
 {
 display: block; 
 }
-.p2:hover + .first_child 
+.top_iterviews:hover  .navbar_first_child 
 {
 display: block; 
 }
-.p3:hover + .first_child 
+
+
+.left 
 {
-display: block; 
-}
-.p4:hover + .first_child 
-{
-display: block; 
-}
-.left {
     text-align: left;
-    padding: 10px;
 }
-.left:focus {
+#mail,#password
+{
+    text-align: center;
+}
+
+.left:focus 
+{
     outline: 2px solid skyblue;
 }
-#continueEmail {
+
+#continueEmail 
+{
     padding: 8px;
     width: 70% !important;
 }
-.fitt {
+
+.continueWithEmail 
+{
     width: max-content;
 }
-#fl {
+
+#fl 
+{
     display: flex;
 }
 #fl > div > img {
     height: 100%;
     width: 30px;
+}
+.facebookButton
+{
+    background-color: #0275d8; 
+}
+#googleButton
+{
+   color: #d86902;
+}
+.facebookButton
+{
+  color: white;
+}
+#continueEmail
+{
+    background-color:#0275d8; 
+    color: white; 
+    cursor: pointer;
+}
+#post_jobs
+{
+    border-bottom: 1px dashed white; 
+    font-weight: bold;
+}
+
+.continueWithEmail
+{
+   width: 30%; 
+   margin: auto;
+}
+
+.termsAndConditions
+{
+    color: white;
+     font-size: 13px; 
+     margin-bottom: 0;
+}
+.lowerMaincontent
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2%;
+    grid-gap: 2%;
+    width: 90%;
+    margin: auto;
+}
+.copyRight
+{
+    text-align: center;
+    font-weight: 600; 
+    color: rgb(102, 97, 97);
 }
