@@ -164,8 +164,3 @@ login = JSON.parse(localStorage.getItem("userNow"));
  }
 
  window.onload = loadActivity();
-
- function moveToDashboard() {
-    localStorage.setItem("userNow", JSON.stringify(null));
-    window.location = "../Dashboard/demo.html"
-}
