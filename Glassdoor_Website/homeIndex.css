@@ -595,3 +595,177 @@ a {
              background-color: rgb(190, 190, 190);
              border-radius: 5px;
          }
+         @media only screen and (min-width: 50px) {
+            #rright {
+                display: grid;
+                grid-template-areas:    "a a a a"
+                                        "b b b b"
+                                        "b b b b"
+                                        "b b b b"
+                                        "c c c c"
+                                        "c c c c"
+                                        "d d d d"
+                                        "d d d d"
+                                        "e e e e"
+                                        "e e e e"
+                                        "f f f f"
+                                        "f f f f"
+                                        "g g g g"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h";
+            }
+            
+            #main {
+                margin-top: 2%;
+                margin-inline: 2%;
+                clear: both;
+                display: grid;
+                grid-gap: 3%;
+                grid-template-areas: "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "z z z z z z z z z z"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r"
+                                    "r r r r r r r r r r";
+            }
+        } 
+        
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            #rright {
+                display: grid;
+                grid-template-areas:    "a a a a"
+                                        "b b b b"
+                                        "b b b b"
+                                        "b b b b"
+                                        "c c c c"
+                                        "c c c c"
+                                        "d d d d"
+                                        "d d d d"
+                                        "e e e e"
+                                        "e e e e"
+                                        "f f f f"
+                                        "f f f f"
+                                        "g g g g"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h";
+            }
+            
+            #main {
+                margin-top: 2%;
+                margin-inline: 2%;
+                clear: both;
+                display: grid;
+                grid-gap: 3%;
+                grid-template-areas: "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r";
+            }
+        } 
+        
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #rright {
+                display: grid;
+                grid-template-areas:    "a a a a"
+                                        "b b b b"
+                                        "b b b b"
+                                        "b b b b"
+                                        "c c d d"
+                                        "c c d d"
+                                        "e e f f"
+                                        "e e f f"
+                                        "g g g g"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h"
+                                        "h h h h";
+            }
+            
+            #main {
+                margin-top: 2%;
+                margin-inline: 2%;
+                clear: both;
+                display: grid;
+                grid-gap: 3%;
+                grid-template-areas: "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r"
+                                    "z z z r r r r r r r";
+            }
+        } 

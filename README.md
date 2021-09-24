@@ -10,12 +10,12 @@ VS Code
 A browser
 Live Server!
 ```
-Hii everyone we had cloned the GlassDoor website within 5 Days with functionality and we used Html, Css, Js only with the only learning of Masai School
+Hi everyone! We had cloned the GlassDoor website within 5 Days with functionality and we used Html, Css, Js only with the only learning of Masai School
 
 # Team Mates
 - Kapish Singh
 - Prottay Ray
-- Shubham Shegokar1
+- Shubham Shegokar
 
 
 ![image](https://miro.medium.com/max/2365/1*ojdV4dJSpv4ku2SAH34koQ.png)
