@@ -138,29 +138,20 @@ border: gray solid 1px;
 display: grid;
 grid-template-columns: repeat(3, minmax(110px, auto));
 background-color: white;
-position: relative;
+position: absolute;
+z-index: 5;
 display:none;
 } 
 
 #login_info
 {
    height: 600px;
-   background-image: url("/Resources/img.jpg"); 
+   background-image: url("/Resources/image.png"); 
    background-repeat:   no-repeat;
    background-size: 100%;
-   position: relative;
    width: 100%;
 }
 
-#login_info::before 
-{
- content: "";
- background-image: url("/Resources/img.jpg");
- top: 0; bottom: 0; left: 0; right: 0; 
- background: rgba(0, 0, 0, 0.60);
- position: absolute;
-
- }
 
 #login_info div
 {
