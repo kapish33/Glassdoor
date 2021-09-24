@@ -148,7 +148,7 @@ function addJobs() {
 let finButton = document.getElementById('finish');
 
 finButton.addEventListener('click', function() {
-    window.location = "../../../Finish.html";
+    window.location = "../../Resources/Finish.html";
 })
 
 
