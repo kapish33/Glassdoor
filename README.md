@@ -17,8 +17,11 @@ Hi everyone! We had cloned the GlassDoor website within 5 Days with functionalit
 - Prottay Ray
 - Shubham Shegokar
 
-![image](https://cdn-images-1.medium.com/max/800/1*grz1y_2UmjH4ajgYnd3tMw.png)
 ##Landing Page
+
+
+![image](https://miro.medium.com/max/2000/1*grz1y_2UmjH4ajgYnd3tMw.png)
+
 
 
 ![image](https://miro.medium.com/max/2365/1*ojdV4dJSpv4ku2SAH34koQ.png)
